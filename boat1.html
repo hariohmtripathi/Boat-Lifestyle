@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #banner{
+            width: 100%;
+            height: 30px;
+            line-height: 30px;
+            margin-top: 0px;
+            text-align: center;
+            background-color: red;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            color: white;
+        }
+        #navbar{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+          
+        }
+        #navbar>div{
+            /* border: 1px solid yellow; */
+            background-color: black;
+        }
+        #logo{
+        margin-top: 20px;
+        margin-bottom: -10px;
+        margin-left: 30px;
+        height: 45%;
+       }
+       #navigators>ul{
+        list-style: none;
+        text-align: center;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+       }
+       #navigators>ul>li{
+        display: inline-block;
+        font-size: medium;
+        
+        line-height: 80px;
+        margin-left: 15px;
+       }
+       #navigators>ul>li>a{
+        text-decoration: none;
+        color: white;
+        
+       }
+       #submenu{
+	    position: absolute;
+	    background: #000000;
+	    width: 100%;
+	    left: 0;
+	    top: 100px;
+        padding: 10px 0;
+	    display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 10px;
+	    visibility: hidden;
+	    line-height: 24px;
+    }
+    ul li:hover #submenu{
+	    visibility: visible;
+    } 
+   .col>img{
+            width:280px;
+            height: 130px;
+   }
+   .col>img:hover{
+    filter: brightness(50%);
+   }
+   #submenu_more{
+	    position: absolute;
+	    background: #000000;
+	    top: 80px;
+        gap: 10px;
+	    visibility: hidden;
+	    line-height: 24px;
+        padding: 10px;
+    }
+    ul li:hover #submenu_more{
+	    visibility: visible;
+    }
+    #submenu_more>p{
+        color: white;
+        padding: 15px;
+        text-align: start;
+        line-height: 0%;
+    }
+    #submenu_more>p:hover {
+     color: grey;
+     cursor: pointer;
+    }
+    input{
+        margin-top: 20px;
+        height: 40px;
+        width: 200px;
+        border-radius: 20px;
+        font-size: larger;
+        padding-left: 20px;
+        display: inline-block;
+    }
+    #navbar> div:last-child{
+        display: flex;
+    }
+    /* Last profile, cart and gift card section in below div */
+    #search_sec>div{                            
+        /* border: 1px solid greenyellow; */
+        width: 100%;
+    }
+   
+    /* Sliding images section */
+
+    .slider{
+        width: 100%;
+     
+    }
+    .slider>img{
+        width: 100%;
+    }
+
+   
+
+    .slider>button:nth-child(2){
+        position: absolute;
+        top: 310px;
+        left: 10px;
+    }
+    .slider>button:nth-child(3){
+        position: absolute;
+        top: 310px;
+        right: 10px;
+        
+    }
+    .slider>button{
+        font-size: 60px;
+        font-weight: bolder;
+        background-color: transparent;
+        border: none;
+        color: red;
+      
+    }
+    
+
+   
+    </style>
+</head>
+<body>
+    <div id="banner">Big savings on your favourite boAt products. Grab now!</div>
+    <div id="navbar">
+        <div>
+            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Boat-Logo_200x_200x_f9c79bf9-9c9a-477d-ab6a-7c889a1f2f70_170x.png?v=1646731229" alt="" id="logo">
+        </div>
+        <div id="navigators">
+           <ul>
+            <li><a href="">Shop</a>
+                <div id="submenu">
+                    <div class="col">
+                        <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/dropdown-TWS_540x.png?v=1612338251" >
+                    </div>
+                    <div class="col">
+                        <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/Rectangle271_540x.png?v=1612338387">
+                      
+                    </div>
+                    <div class="col">
+                        <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/pro_gear_720x.jpg?v=1648546494" >
+                     
+                    </div>
+                    <div class="col">
+                        <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/latest_background_b4f773ca-05d9-41cc-a7cf-3104993ae895_540x.png?v=1612338356" >
+                     
+                    </div>
+                    <div class="col">
+                        <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/box-5_480x.png?v=1612338436" >
+                     
+                    </div>
+                    <div class="col">
+                        <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/Collections_5baef8f1-a67a-40a5-a537-4258c6caae6a_480x.png?v=1622452897" >
+                     
+                    </div>
+                    <div class="col">
+                        <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/bence-boros-253214-unsplash_480x.jpg?v=1648545875">
+                     
+                    </div>
+                    <div class="col">
+                        <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/New-Category-Banners_with-Trebal_09_480x.png?v=1615033153">
+                     
+                    </div>
+                    <div class="col">
+                        <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/dropdown-limited-edition_480x.png?v=1612338560">
+                     
+                    </div>
+                    <div class="col">
+                        <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/MISFIT-shop_480x.png?v=1624859990">
+                     
+                    </div>
+                    <div class="col">
+                        <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/Immortal_category_Image_480x.png?v=1626094103">
+                     
+                    </div>
+                </div>
+            </li>
+            <li><a href="">Offer Zone</a></li>
+            <li><a href="">More</a>
+                <div id="submenu_more">
+                    <p>Daily Deals</p>
+                    <p>Gifting</p>
+                    <p>Do What Floats Your boAt</p>
+                    <p>Meet The boAtheads</p>
+                    <p>Corporate Orders</p>
+                    <p>Earn Rs.100</p>
+                    <p>Careers</p>
+                </div>
+            </li>
+           </ul> 
+        </div>
+        <div id="search_sec">
+            <input type="text" placeholder="Search...">
+            <div></div>
+            
+        </div>
+    </div>
+
+    <!-- slideshow here*********** -->
+
+    <div class="slider">
+        <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/2000x650_5496c9d9-c8d1-49c1-a7c2-83055a261f8a_1000x.jpg?v=1654509146" alt="">
+        <button class="slide_button"><</button>
+        <button class="slide_button">></button>
+    </div>  
+</body>
+</html>
+
+<script>
+    // slider part
+
+    let img = document.querySelector(".slider>img");
+    let buttons =document.querySelectorAll(".slide_button");
+    let imgNum=0;
+    let imgArr=[
+    "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/2000x650_5496c9d9-c8d1-49c1-a7c2-83055a261f8a_1000x.jpg?v=1654509146",
+    "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/web34_0dc3ef24-e76e-4587-b21d-948137c138e3_1400x.jpg?v=1654670966",
+    "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/135-WEB_1400x.jpg?v=1655189587",
+    "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/WEB_c1e0eae6-69d2-4898-a82c-9bffc641a1ec_1400x.jpg?v=1654366545"
+    ]
+
+    buttons[0].addEventListener("click", function(){
+        if(imgNum===0){
+            imgNum=imgArr.length-1;
+        }else {
+            imgNum--;
+        }
+        img.src=imgArr[imgNum];
+    })
+
+    buttons[1].addEventListener("click", function(){
+        if(imgNum===imgArr.length-1){
+            imgNum=0;
+        }else {
+            imgNum++;
+        }
+        img.src=imgArr[imgNum];
+    })
+
+    setInterval(function() {
+        if(imgNum===imgArr.length-1){
+            imgNum=0;
+        }else {
+            imgNum++;
+        }
+        img.src=imgArr[imgNum];
+}, 4000);
+</script>

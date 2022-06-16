@@ -9,6 +9,10 @@ body{
 #topOne{
     width: 100%;
     background-color: red;
+}
+#topOne>div{
+    width: 98%;
+    background-color: red;
     padding: 3px;
     margin: auto;
     text-align: center;
@@ -28,13 +32,16 @@ body{
 }
 /* home and page link below navbar */
 #home{
+    width: 100%;
+}
+#home>div{
     display: flex;
     background-color: #f5f5f5;
     padding-top: 12px;
     padding-left: 50px;
     color: gray;
 }
-#home>p:last-child{
+#home>div>p:last-child{
     margin-left: 5px;
     color: black;
 }
@@ -122,7 +129,10 @@ body{
 }
 /* product and its rating part */
 #description{
-    width: 95%;
+    width: 100%;
+}
+#description>div{
+    width: 94%;
     margin: auto;
     display: flex;
     justify-content: flex-start;
@@ -130,7 +140,7 @@ body{
     background-color: #f5f5f5;
     margin-top:-12px
 }
-#description>div{
+#description>div>div{
     margin-right: 25px;
 }
 #smallImages{

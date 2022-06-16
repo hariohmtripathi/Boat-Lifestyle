@@ -1,0 +1,1812 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* NAVBAR STARTS HERE  */
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap');
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    #banner{
+        width: 100%;
+        height: 30px;
+        line-height: 30px;
+        margin-top: 0px;
+        text-align: center;
+        background-color: red;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        color: white;
+     }
+
+    #navbar {
+        height: 70px;
+        display: grid;
+        background-color: #000000;
+        align-items: center;
+        grid-template-columns: repeat(3, 1fr);
+        position: sticky;
+        top: 0px;
+    }
+
+    #navbar>div {
+        /* border: 1px solid yellow; */
+        background-color: black;
+    }
+
+    #navbar>div:first-child {
+        display: flex;
+        align-items: center;
+
+    }
+
+    #logo {
+        width: 15%;
+        margin-left: 150px;
+    }
+
+    ​
+
+    /* #logo{
+    margin-top: 20px;
+    margin-bottom: -10px;
+    margin-left: 30px;
+    height: 45%;
+   } */
+    #navigators {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #navigators>ul {
+        list-style: none;
+        text-align: center;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    #navigators>ul>li {
+        display: inline-block;
+        font-size: medium;
+
+        line-height: 40px;
+        margin-left: 15px;
+    }
+
+    #navigators>ul>li>a {
+        text-decoration: none;
+        color: white;
+
+    }
+
+    #submenu {
+        position: absolute;
+        background: #000000;
+        width: 100%;
+        left: 0;
+        top: 50px;
+        padding: 10px 0;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        visibility: hidden;
+        line-height: 24px;
+    }
+
+    ul li:hover #submenu {
+        visibility: visible;
+    }
+
+    .col>img {
+        width: 280px;
+        height: 130px;
+    }
+
+    .col>img:hover {
+        filter: brightness(50%);
+    }
+
+    #submenu_more {
+        position: absolute;
+        background: #000000;
+        top: 50px;
+        gap: 10px;
+        visibility: hidden;
+        line-height: 24px;
+        padding: 10px;
+    }
+
+    ul li:hover #submenu_more {
+        visibility: visible;
+    }
+
+    #submenu_more>p {
+        color: white;
+        padding: 15px;
+        text-align: start;
+        line-height: 0%;
+    }
+
+    #submenu_more>p:hover {
+        color: grey;
+        cursor: pointer;
+    }
+
+    input {
+
+        height: 40px;
+        width: 250px;
+        border-radius: 20px;
+        font-size: large;
+        padding-left: 20px;
+        display: inline-block;
+    }
+
+    #navbar>div:last-child {
+        display: flex;
+
+    }
+
+    /* Last profile, cart and gift card section in below div */
+    #search_sec>div {
+        /* border: 1px solid greenyellow; */
+        width: 30%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        /* gap: 10px; */
+        align-items: center;
+        justify-content: center;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    /* .smallicon{
+    border: 1px solid white;
+} */
+    .smallicon>img {
+        width: 50%;
+    }
+
+   
+
+/* NAVBAR OVER ^^^^^ */
+
+    /* Sliding images section */
+
+    .slider{
+        width: 100%;
+        
+    }
+    .slider img{
+        width: 100%;
+     
+    }
+    .slider>button:nth-child(2){
+        position: absolute;
+        top: 280px;
+        left: 10px;
+    }
+    .slider>button:nth-child(3){
+        position: absolute;
+        top: 280px;
+        right: 10px;
+        
+    }
+    .slider>button{
+        font-size: 60px;
+        font-weight: bolder;
+        background-color: transparent;
+        border: none;
+        color: red;
+      
+    }
+    body{
+        background-color: #141414;
+    }
+    
+    
+/* SLIDER OVER^^^^^ */
+
+    .collection_title{
+        width: 100%;
+        color: white;
+        text-align: center;
+        padding: 40px;
+        font-size: 25px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .container{
+        /* border: 1px solid yellow; */
+        width: 100%;
+        height: 400px;
+    }
+
+
+
+ /* INTERNAL DIV OF PRODUCTS    */
+   
+    .prod{
+        margin: auto;
+        width: 85%;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        /* border: 1px solid yellowgreen; */
+        grid-template-columns: repeat(4, 1fr);
+        
+    }
+    .prod>div {
+        display: flex;
+        border-radius: 10px;
+        background-color: #e3e3e3;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+    .prod>div>img {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+    }
+    .prod>div>img:hover {
+       filter: contrast(70%);
+    }
+    .prod>div>p {
+        position: relative;
+        width: 28%;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        font-weight: 500;
+        text-transform: uppercase;
+        font-size: 14px;
+        padding: 3px;
+        display: inline-block;
+        bottom: 285px;
+        margin-bottom: -45px;
+    }
+    .prod>div>div>div>span {
+        margin-left: 0px;
+        margin-right: 5px;
+        font-size: 16px;
+    }
+    .prod>div>div>div>span:first-child {
+        font-size: 15px;
+    }
+
+    .prod>div>div {
+        padding: 10px;
+        margin: 8px;
+        border-radius: 10px;
+        background-color: white;
+    }
+    .prod>div>div>h3 {
+        margin-top: -2px;
+        margin-bottom: 5px;
+        margin-left: 5px;
+
+    }
+
+    .prod>div>div>p {
+        margin-top: -15px;
+        font-size: 15px;
+        margin-left: 5px;
+    }
+    .prod>div>div>hr {
+        margin-top: -8px;
+        background-color: #e3e3e3;
+        height: 0.5px;
+    }
+
+    .prod>div>div>button {
+        width: 100%;
+        /* margin-top: -8px; */
+        background-color: red;
+        color: white;
+        text-transform: uppercase;
+        font-size: 15px;
+        border: none;
+        padding: 8px;
+        font-weight: bold;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .prod>div>div>div {
+        display: flex;
+        padding: 5px;
+        font-size: 15px;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .prod>div>div>div>p {
+        margin-top: -8px;
+        margin-right: 5px;
+    }
+    .prod p{
+        line-height: 32px;
+    }
+    
+
+ /* INTERNAL DIV OF PRODUCTS^^^^^^ */
+
+                 
+    /* SECOND SLIDER */
+        #slider_2container{
+        /* border: 1px solid white; */
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+
+    .slider_2{
+        /* border: 1px solid red; */
+        width:75%;
+        overflow: hidden;        
+        border-radius: 25px;
+    }
+    .slider_2 img{
+        width: 100%;
+
+    }
+    #slider_2container>button{
+        font-size: 60px;
+        font-weight: bolder;
+        background-color: transparent;
+        border: none;
+        color: red;
+    }
+    
+                                                                                          /* boatblogs CSS */
+    #boatblogs{
+        width: 100%;
+        color: black;
+        background-color: #dcdcdc;
+        text-align: center;
+        padding: 30px;
+        font-size: 25px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    #blogs_container{
+        /* border: 1px solid yellow; */
+        background-color: #dcdcdc;
+        width: 100%;
+        /* height: 400px; */
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        
+    }
+    #blogs_container>div{
+        /* border: 1px solid blue; */
+        margin: 20px;
+        /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+        font-size: 20px;
+        font-weight: 700;
+    }
+    #blogs_container>div>p{
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    #blogs_container>div>p:hover{
+        color: red;
+    }
+    #blogs_container img{
+        width: 100%;
+        transition: transform .5s ease;
+    }
+    #blogs_container div{
+        overflow: hidden;
+    }
+
+    #blogs_container img:hover{
+        transform: scale(1.1);
+    }
+    #blogs_container+div{
+         /* border: 1px solid yellow; */
+         background-color: #dcdcdc;
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #blogs_container+div>button{
+        border: none;
+        background-color: #ff0000;
+        width: 180px;
+        height: 50px;
+        font-weight: 700;
+        color: white;
+        font-size: 15px;
+        border-radius: 5px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+       
+    }
+    #blogs_container+div>button:hover{
+        filter: brightness(70%);
+    }
+
+                                                                                        /* boatblogs css over */
+   /* Bottom page CSS part******************************************************** */
+
+   #meetBoat{
+    width: 100%;
+    background-color: #141414;
+    padding: 20px;
+    
+}
+#meetIn{
+    width: 70%;
+    display: flex;
+    background-color: #141414;
+    padding: 20px;
+    margin: auto;
+}
+#meetIn>div{
+    width: 40%;
+   color: white;
+   margin: auto;
+  
+}
+#meetIn>div:nth-child(2){
+    width: 50%;
+   height: 400px;
+   padding-top: 40px;
+   margin-left: 200px;
+}
+#meetIn>div>img{
+  width: 100%;
+  border-radius: 10px;
+}
+hr{
+    height: 2px;
+    width: 20%;
+     background-color: red;
+     border: none;
+     margin-top: 3px;
+}
+#meetIn>div>h3{
+    color:red;
+    margin-bottom: 30px;
+    font-size: 25px;
+    font-weight: 200;
+    margin: 20px 0px 20px 0px;
+}
+#meetIn>div>p{
+    margin: 20px 0px 20px 0px;
+    line-height: 23px;
+}
+#meetB{
+    text-decoration: none;
+}
+/* What they say about us section */
+#hawabazi{
+    width: 100%;
+    border: 1px solid black;
+   display: flex;
+   justify-content: space-evenly;
+   background-color: #dcdcdc;
+   padding: 100px 0;
+   /* overflow: hidden; */
+}
+#hawabazi>div{
+    width: 25%;
+   margin-top: -50px;
+   overflow: hidden;
+}
+#hawabazi>div>div:first-child{
+    border-radius: 150px;
+    border: 2px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   overflow:visible;
+    width: 80%;
+    margin: auto;
+    margin-top: -50px;
+    height:270px ;
+}
+#hawabazi>div>div:first-child>a>img{
+    width: 100%;
+    margin-bottom :-80px;;
+}
+#hawabazi>div>div:last-child{
+    background-color: #ed1d24;
+    margin-top: -60px;
+    padding: 36px;
+    text-align: center;
+     border-bottom-left-radius: 20px;
+     border-bottom-right-radius: 20px;
+}
+.hw-text{
+    color: white;
+    margin-top: 40px;
+    font-size: 16px;
+}
+.hw-text+button{
+    background-color:white;
+    color: red;
+    width: 60%;
+    height: 40px;
+    font-size: 16px;
+    font-weight:700;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.hw-text+button:hover{
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+}
+/* In the press section css */
+#press_main{
+    width: 100%;
+    background-color: #141414;
+    padding: 30px;
+}
+#press_main>h1{
+    color: white;
+    text-align: center;
+    font-size: 40px;
+}
+#press_main>h1+p{
+    color: white;
+    text-align: center;
+    font-size: 17px;
+    margin:40px 0;
+}
+.imageContent{
+    display: flex;
+    width: 70%;
+    margin: auto;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.imageContent>div>img{
+   width: 140px;
+   filter: grayscale(100%);
+}
+.imageContent>div>img:hover{
+    width: 140px;
+    filter: grayscale(0%);
+    cursor: pointer;
+ }
+/* image */
+#img_section{
+    width: 100%;
+    background-color: #141414;
+}
+#img_section>img{
+    width: 100%;
+}
+/* brand Promise section starts here */
+#brand_promise{
+    width: 100%;
+    background-color: #141414;
+    padding: 30px;
+}
+#brand_promise>h1{
+    text-align: center;
+    color:white;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+#brand_content{
+    width: 65%;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+}
+#brand_content>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-size:20px;
+}
+.brand_text{
+    color: white;
+}
+.brand_img{
+    width: 50px;
+
+}
+/* middle text */
+#middleText{
+    width: 100%;
+    background-color: 
+    #2c2c2c;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+}
+#middleText>p{
+    width: 65%;
+    text-align: center;
+    margin: auto;
+    font-weight: lighter;
+    color: white;
+}
+
+footer{
+    padding: 40px 0px;
+    font-family: sans-serif;
+    background-color: black;
+}  
+#topPart{
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    margin: auto;
+    /* margin-top:40px; */
+}
+#topPart>div+div{
+  color: #ffffff;
+  width: 15%;
+}
+#topPart>div:first-child{
+    width:38%;
+}
+#topPart>div>img{
+    width:20%;
+    margin-bottom:2%;
+}
+/* Email input and button style */
+#emailIn{
+width: 100%;
+display: grid;
+border: 1px solid #ffffff;
+grid-template-columns:60% 40%;
+grid-template-rows:auto;
+border-radius: 5px;
+padding: 5px;
+margin-top: 10px;
+overflow: auto;
+box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+#emailIn>input{
+    background-color: transparent;
+    margin: 5px;
+    height:40px ;
+    outline: none;
+    border: none;
+    resize: none;
+    color: #ffffff;
+}
+#emailIn>button{
+    border: none;
+    background-color: red;
+    border-radius: 5px;
+    font-size: 20px;
+    margin:1%;
+    font-weight: 700;
+    color: white;
+    
+}
+#emailIn>button:hover{
+    cursor: pointer;
+}
+#topPart>div:first-child>p{
+    color:white;
+
+  }
+#topPart>div>p{
+  margin-bottom: 4%;
+}
+#topPart>div>div>p{
+    font-weight: 100;
+    margin-bottom: 4%;
+}
+#topPart>div>div>p:hover{
+    cursor: pointer;
+}
+/* icons part */
+#icons{
+    display: flex;
+    width: 70%;
+    margin-top: 5%;
+}
+#icons>a{
+    width: 20%;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    padding: 10px;
+}
+#icons>a:hover{
+    width: 20%;
+    background-color: white;
+    color:black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+/* Bottom part css */
+#bottomPart{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top:1%;
+}
+#bottomPart>div{
+    display: flex;
+    align-items: center;
+}
+#bottomPart>div:first-child>img{
+    width: 90%;
+}
+#bottomPart>div:last-child>a{
+    margin: 20px;
+}
+/* #bottomPart>div:last-child>img:hover{
+    cursor: pointer;
+} */
+#bottomPart>div:last-child>h2{
+    color: #ffffff;
+    margin-right: 30px;
+    font-size: 18px;
+}
+#bottomPart+p{
+color:#ffffff;
+text-align: center;
+margin-top: 15px;
+}
+
+
+    </style>
+</head>
+<body>
+    <!-- NAVBAR HTML STARTS HERE -->
+    <div id="banner">Big savings on your favourite boAt products. Grab now!</div>
+    <div id="navbar">
+        <div>
+            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Boat-Logo_200x_200x_f9c79bf9-9c9a-477d-ab6a-7c889a1f2f70_170x.png?v=1646731229" alt="" id="logo">
+        </div>
+        <div id="navigators">
+           <ul>
+            <li><a href="">Shop <small>v</small></a>
+                <div id="submenu">
+                    <a href="products.html">
+                    <div class="col" id="nav_airdopes">
+                        <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/dropdown-TWS_540x.png?v=1612338251" >
+                    </div>
+                    </a>
+                    <a href="products.html">
+                    <div class="col" id="nav_wireless">
+                        <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/Rectangle271_540x.png?v=1612338387">
+                    </div>
+                    </a>
+                    <a href="products.html">
+                    <div class="col" id="nav_smartwatch">
+                        <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/pro_gear_720x.jpg?v=1648546494" >
+                     
+                    </div>
+                    </a>
+                    <a href="products.html">
+                        <div class="col" id="nav_wired">
+                            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/latest_background_b4f773ca-05d9-41cc-a7cf-3104993ae895_540x.png?v=1612338356" >
+                        </div>
+                    </a>
+                   <a href="products.html">
+                    <div class="col" id="nav_speakers">
+                        <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/box-5_480x.png?v=1612338436" >
+                     
+                    </div>
+                   </a>
+                    <a href="products.html">
+                        <div class="col" id="nav_homeaudio">
+                            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/Collections_5baef8f1-a67a-40a5-a537-4258c6caae6a_480x.png?v=1622452897" >
+                        </div>
+                    </a>
+                    <a href="products.html">
+                        <div class="col" id="nav_accessories">
+                            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/bence-boros-253214-unsplash_480x.jpg?v=1648545875">
+                         
+                        </div>
+                    </a>
+                    <a href="products.html">
+                        <div class="col" id="nav_trebel">
+                            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/New-Category-Banners_with-Trebal_09_480x.png?v=1615033153">
+                         
+                        </div>
+                    </a>
+                    <a href="products.html">
+                        <div class="col" id="nav_limited">
+                            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/dropdown-limited-edition_480x.png?v=1612338560">
+                         
+                        </div>
+                    </a>
+                    <a href="products.html">
+                        <div class="col" id="nav_grooming">
+                            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/MISFIT-shop_480x.png?v=1624859990">
+                            
+                        </div>
+                    </a>
+                    <a href="products.html">
+                        <div class="col" id="nav_gaming">
+                            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/Immortal_category_Image_480x.png?v=1626094103">
+                         
+                        </div>
+                    </a>
+                    
+                </div>
+            </li>
+            <li><a href="">Offer Zone</a></li>
+            <li><a href="">More <small>v</small></a>
+                <div id="submenu_more">
+                    <p>Daily Deals</p>
+                    <p>Gifting</p>
+                    <p>Do What Floats Your boAt</p>
+                    <p>Meet The boAtheads</p>
+                    <p>Corporate Orders</p>
+                    <p>Earn Rs.100</p>
+                    <p>Careers</p>
+                </div>
+            </li>
+           </ul> 
+        </div>
+        <div id="search_sec">
+            <input type="text" placeholder="Search...">
+            <div>
+                <div class="smallicon">
+                    <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/navigation-Icon4.png?v=1655206048" alt="">
+                </div>
+                <div class="smallicon">
+                    <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/gift.png?v=1606314809" alt="">
+                </div>
+                <div class="smallicon">
+                    <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/navigation-Icon-3.png?v=1655206047" alt="">
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <!-- NAVBAR HTML OVER^^^^^ -->
+
+
+    <!-- slideshow here*********** -->
+
+    <div class="slider">
+        <a href="link1.com"> <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/2000x650_5496c9d9-c8d1-49c1-a7c2-83055a261f8a_1000x.jpg?v=1654509146" alt=""></a>
+       
+        <button class="slide_button"><</button>
+        <button class="slide_button">></button>
+    </div>  
+    <!-- SLIDSHOW HTML OVER^^^^ -->
+
+
+                                                                     <!-- Best Sellers -->
+    <div class="collection_title">
+        <h2>Best Sellers</h2>
+    </div>
+    <div class="container">
+        <div id="bestsell" class="prod">
+
+        </div>
+    </div>
+
+                                                                     <!-- smart watches -->
+    <div class="collection_title">
+        <h2>Smart Watches</h2>
+    </div>
+    <div class="container">
+        <div id="watches" class="prod">
+    </div>
+                                                                    <!-- New Launches -->
+    <div class="collection_title">
+        <h2>New Launches</h2>
+    </div>
+    <div id="slider_2container">
+            <button class="slide2_button"><</button>
+        <div class="slider_2"><a href="link1.com">
+            <img src="https://i.ibb.co/tsrrQz7/final-img3.png" alt="">
+        </a>
+        </div>  
+            <button class="slide2_button">></button>
+        
+    </div>
+                                                                <!-- Trending Wireless -->
+    <div class="collection_title">
+        <h2>Trending Wireless</h2>
+    </div>
+    <div class="container">
+        <div id="trending_wireless" class="prod">
+    </div>
+                                                                <!-- Trending Wired --> 
+    <div class="collection_title">
+        <h2>Trending Wired</h2>
+    </div>
+    <div class="container">
+        <div id="trending_wired" class="prod">
+    </div>
+                                                            <!-- Trending Headphones --> 
+    <div class="collection_title">
+        <h2>Trending Headphones</h2>
+    </div>
+    <div class="container">
+        <div id="headphones" class="prod"></div>
+    </div>
+                                                                  <!-- Gaming --> 
+    <div class="collection_title">
+        <h2>Gaming</h2>
+    </div>
+    <div class="container">
+        <div id="gaming" class="prod"></div>
+    </div>
+                                                                  <!-- Boatblogs --> 
+    <div id="boatblogs">
+        <h2>boAt Blogs</h2>
+    </div>
+    <div id="blogs_container">
+        <div>
+            <div>
+                <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Earphone_1296x_540x_25759241-1386-4661-bec0-bad7c111178f_540x.png?v=1650620291" alt="">
+            </div>
+            <p>
+                Earphones Buying Guide - Everything You Need To Know
+            </p>
+        </div>
+        <div>
+            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Main-banner_520x500_540x_d7c9944e-0985-498b-9a89-3a54d32c9dd2_520x.png?v=1650620307" alt="">
+            <p>
+                The Ultimate Smartwatch Guide - Get The World On Your Wrist
+            </p>
+        </div>
+        <div>
+            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/articles/blog_600x.jpg?v=1654260672" alt="">
+            <p>
+                It Is Time To Rock The Streets With boAt Headphones
+            </p>
+        </div>
+    </div>
+    <div>
+        <button>EXPLORE BLOGS</button>
+    </div>
+                                                                    <!-- Boatblogs over -->
+    <!-- ****bottom section************************************** -->
+
+    
+    <!-- Meet the boat head section -->
+    <a id="meetB" href="">
+        <div id="meetBoat">
+            <div id="meetIn">
+            <div><img
+                    src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Fierce_-Flamboyant_-Fearless_jpg_563x.jpg?v=1651227694"
+                    alt="image"></div>
+            <div>
+                <h1>Meet The boAtheads</h1>
+                <hr>
+                <h3>K L RAHUL</h3>
+                <h1>Fierce. Flamboyant. Fearless.</h1>
+                <p>When you hear the crowd roar, be assured that it's KL Rahul making his way to the field. Our hardcore boAthead, KL Rahul, hits it with his performance as well as his fashion statement. On or off field, Rahul always makes #MoveOfTheChampions.</p>
+            </div>
+        </div>
+    </div></a>
+     <!-- What they says about us section -->
+     <div id="hawabazi">
+        <div>
+            <div><a href="https://www.boat-lifestyle.com/products/stone-1200"><img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/testi-1200_284x.png?v=1649980899" alt="image"></a> </div>
+            <div>
+               <a href="https://www.boat-lifestyle.com/products/stone-1200"><p class="hw-text">"It is value of money, best sound especially bass"</p>
+              <button>Shop Now</button></a> 
+            </div>
+        </div>
+        <div>
+            <div><a href="https://www.boat-lifestyle.com/products/boat-rockerz-255-pro-plus"><img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/testimonial-img-2_284x.png?v=1649668053" alt="image"></a></div>
+            <div>
+               <a href="https://www.boat-lifestyle.com/products/boat-rockerz-255-pro-plus"><p class="hw-text">"The battery backup is something unbelievable"....</p>
+                <button>Shop Now</button></a>
+            </div>
+        </div>
+        <div>
+            <div><a href="https://www.boat-lifestyle.com/products/airdopes-381"><img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/testimonial-img-3_284x.png?v=1649668053" alt="image"></a></div>
+            <div>
+               <a href="https://www.boat-lifestyle.com/products/airdopes-381"><p class="hw-text">"Amazing proudcut great sound quality and the sound performance is also awesome"</p>
+                 <button>Shop Now</button></a>
+            </div>
+        </div>
+    </div>
+        <!-- In the press section -->
+        <div id="press_main">
+            <h1>In the Press</h1>
+            <p>We need to append it through javaScript</p>
+            <div class="imageContent">
+                <div><img
+                        src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/mint_0566185f-75d7-4819-a2a2-e2acc4535e78_200x.png?v=1649066803"
+                        alt="Image"></div>
+                <div><img
+                        src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Forbes_1_641a219a-af36-45ee-8d3b-90ca148056c1_200x.png?v=1649066820"
+                        alt="image"></div>
+                <div><img
+                        src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/techradar_1_ba476d16-16de-4a29-baa2-537f33fc7f88_200x.png?v=1649066820"
+                        alt="image"></div>
+                <div><img
+                        src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/ET_1_9f80aa59-c905-4886-b75f-5b96808f2903_200x.png?v=1649066820"
+                        alt="image"></div>
+                <div><img
+                        src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/gadgets360_1_6a0c2c78-109a-4cbc-be58-05b893a41d4a_231x.png?v=1649066821"
+                        alt="image"></div>
+            </div>
+        </div>
+        <!-- image part -->
+        <div id="img_section">
+            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Fotter-Awards_11-02-2022_5d6a9e4a-d3d4-434b-8846-4403e92c3573_1995x.png?v=1651217615"
+                alt="image">
+        </div>
+        <!-- brand Promise section starts here -->
+        <div id="brand_promise">
+            <h1>Brand Promise</h1>
+            <div id="brand_content">
+                <div><img class="brand_img"
+                        src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/group_186_3x_4616a7a4-8c24-4065-a237-54e3d574bb94.png?v=1611132367"
+                        alt="Image"></div>
+                <div class="brand_text">Free Shiping</div>
+                <div><img class="brand_img"
+                        src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/vector_3x_50a1233e-95d9-4e18-9e8e-757b545e2c06.png?v=1611132367"
+                        alt="Image"></div>
+                <div class="brand_text">Exclusive Deals</div>
+                <div><img class="brand_img"
+                        src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/vector_2_2x_9d5071e2-154a-4f06-b660-9d0430a18248.png?v=1611132367"
+                        alt="Image"></div>
+                <div class="brand_text">Secure Checkout</div>
+            </div>
+        </div>
+        <!-- middleText starts -->
+        <div id="middleText">
+            <p>India's fastest growing audio & wearables brand. The most incredible range of wireless earphones, earbuds,
+                headphones, smart watches, and home audio. From workouts to adventures, boAt will get you sailing!</p>
+        </div>
+        <!-- footer part starts here -->
+        <footer>
+            <!-- top part of footer  -->
+            <div id="topPart">
+                <!-- Ist div -->
+                <div><img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Boat-Logo_200x.png?v=1600753267"
+                        alt="BoatLogo">
+                    <p>Subscribe to email alerts. We promise not to spam your inbox.</p>
+                    <div id="emailIn"><input type="email" placeholder="Enter Email"><button>Subscribe</button></div>
+                    <!-- icons part -->
+                    <div id="icons">
+                        <a href="https://www.facebook.com/boat.nirvana/"><div><i class="fa-brands fa-facebook-f"></i></div></a>
+                        <a href="https://twitter.com/RockWithboAt"><div><i class="fa-brands fa-twitter"></i></div></a>
+                        <a href="https://www.instagram.com/boat.nirvana/"><div><i class="fa-brands fa-instagram"></i></div></a>
+                        <a href="https://www.youtube.com/channel/UCY3JXaO_v8H3E6hTYUp5qWQ"><div><i class="fa-brands fa-youtube"></i></div></a>
+                        <a href="https://www.linkedin.com/company/boat-lifestyle/"><div><i class="fa-brands fa-linkedin"></i></div></a>
+                    </div>
+                </div>
+                <!-- second div -->
+                <div>
+                    <p>SHOP</p>
+                    <div>
+                        <p>True Wireless Earbuds</p>
+                        <p>Wireless Headphones</p>
+                        <p>Wired Headphones</p>
+                        <p>Wireless Speakers</p>
+                        <p>Home Audio</li>
+                        <p>Mobile Accessories</p>
+                        <p>Smart Watches</p>
+                        <p>TRebel</p>
+                        <p>Misfit</p>
+                        <p>Gift Cards</li>
+                        <p>Rock In India</p>
+                        <p>Earn Rs.100</p>
+                    </div>
+                </div>
+                <div>
+                    <p>HELP</p>
+                    <div>
+                        <p>Track Your Orders</p>
+                        <p>Warranty & Support</p>
+                        <p>Return Policy</p>
+                        <p>Service Centers</p>
+                        <p>Bulk Order</p>
+                        <p>FAQ's</p>
+                        <p>Why Buy Direct</p>
+                    </div>
+                </div>
+                <div>
+                    <p>COMPANY</p>
+                    <div>
+                        <p>About Us</p>
+                        <p>News</p>
+                        <p>Read Our Blog</p>
+                        <p>Carriers</p>
+                        <p>Security</p>
+                        <p>Terms Of Services</p>
+                        <p>Privacy Policy</p>
+                        <p>Investors Relations</p>
+                    </div>
+                </div>
+            </div>
+            <!-- bottom part of footer -->
+            <div id="bottomPart">
+                <div><img
+                        src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Fotter_payment_icn_2_900x_aff68517-98f4-4a82-9aee-2405cea66251_350x.png?v=1650262054"
+                        alt=""></div>
+                <div>
+                    <h2>DOWNLOAD THE APP</h2>
+                    <a href="https://play.google.com/store/apps/details?id=boatlifestylein.android.app"><img
+                            src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/google-play.png?v=1608620293"
+                            alt="google Play logo"></a>
+                    <a href="https://apps.apple.com/us/app/id1521646593"><img
+                            src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/app-store.png?v=1608620293"
+                            alt="apple store logo"></a>
+                </div>
+            </div>
+            <p>© 2022 Imagine Marketing Limited. All Rights Reserved.</p>
+        </footer>
+
+</body>
+</html>
+
+<script>
+    // slider part
+
+    let img = document.querySelector(".slider img");
+    let url= document.querySelector(".slider>a")
+    let buttons =document.querySelectorAll(".slide_button");
+    let imgNum=0;
+    let imgArr=[
+    "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/2000x650_5496c9d9-c8d1-49c1-a7c2-83055a261f8a_1000x.jpg?v=1654509146",
+    "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/web34_0dc3ef24-e76e-4587-b21d-948137c138e3_1400x.jpg?v=1654670966",
+    "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/135-WEB_1400x.jpg?v=1655189587",
+    "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/WEB_c1e0eae6-69d2-4898-a82c-9bffc641a1ec_1400x.jpg?v=1654366545"
+    ]
+
+    let linkArr=[
+        "link1.com",
+        "link2.com",
+        "link3com",
+        "link4.com"
+    ]
+
+    buttons[0].addEventListener("click", function(){
+        if(imgNum===0){
+            imgNum=imgArr.length-1;
+        }else {
+            imgNum--;
+        }
+        img.src=imgArr[imgNum];
+        url.setAttribute("href",linkArr[imgNum]);
+    })
+
+    buttons[1].addEventListener("click", function(){
+        if(imgNum===imgArr.length-1){
+            imgNum=0;
+        }else {
+            imgNum++;
+        }
+        img.src=imgArr[imgNum];
+        url.setAttribute("href",linkArr[imgNum]);
+    })
+
+    setInterval(function() {
+        if(imgNum===imgArr.length-1){
+            imgNum=0;
+        }else {
+            imgNum++;
+        }
+        img.src=imgArr[imgNum];
+        url.setAttribute("href",linkArr[imgNum]);
+}, 4000);
+
+
+// 1ST SLIDER JS OVER ^^^^^
+
+
+// 2nd SLIDER PART
+
+
+    let img2 = document.querySelector(".slider_2 img");
+    let url2= document.querySelector(".slider_2>a")
+    let buttons2 =document.querySelectorAll(".slide2_button");
+    let imgNum2=0;
+    let imgArr2=[
+    "https://i.ibb.co/m6L47Kg/final-img.png",
+    "https://i.ibb.co/7bCVQJD/final-img2.png",
+    "https://i.ibb.co/tsrrQz7/final-img3.png",
+    ]
+
+    let linkArr2=[
+        "link1.com",
+        "link2.com",
+        "link3com",
+    ]
+
+    buttons2[0].addEventListener("click", function(){
+        if(imgNum2===0){
+            imgNum2=imgArr2.length-1;
+        }else {
+            imgNum2--;
+        }
+        img2.src=imgArr2[imgNum2];
+        url2.setAttribute("href",linkArr2[imgNum]);
+    })
+
+    buttons2[1].addEventListener("click", function(){
+        if(imgNum2===imgArr2.length-1){
+            imgNum2=0;
+        }else {
+            imgNum2++;
+        }
+        img2.src=imgArr2[imgNum2];
+        url2.setAttribute("href",linkArr2[imgNum]);
+    })
+
+    setInterval(function() {
+        if(imgNum2===imgArr2.length-1){
+            imgNum2=0;
+        }else {
+            imgNum2++;
+        }
+        img2.src=imgArr2[imgNum2];
+        url2.setAttribute("href",linkArr2[imgNum]);
+}, 4000);
+
+// 2ND SLIDER OVER ^^^^^
+
+
+// PRODUCT DATA
+
+let productData = [
+{
+            id: "001",
+            image: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main_black_72207866-b34c-4b47-885d-998168d62245_400x.png?v=1648108781",
+            name: "boAt Watch Wave Lite",
+            price: "1799",
+            main_price: "6990",
+            category: "smartwatch",
+            review: "328",
+            rating: "4.8",
+            discount: "74",
+            detailimage1: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/01_4f474894-40aa-4aca-ba57-8486dd47acc8_700x.jpg?v=1655271238",
+            detailimage2: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/03_c1403863-ce69-4cc9-a4e4-20d06fece403_700x.jpg?v=1655271237",
+            detailimage3: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/05_e71500a0-e06f-453f-926f-5ee18b4d2d39_700x.jpg?v=1655271238",
+            detailimage4: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/03_c1403863-ce69-4cc9-a4e4-20d06fece403_700x.jpg?v=1655271237",
+            detailimage5: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/05_e71500a0-e06f-453f-926f-5ee18b4d2d39_700x.jpg?v=1655271238",
+            colourimage1: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main_black_72207866-b34c-4b47-885d-998168d62245_600x.png?v=1648108781",
+            colourimage2: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main_maroon_9b2c008c-1cf9-49e3-988d-3cb43a456d80_600x.png?v=1648108782",
+            colourimage3: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main_blue_759e7ad4-18af-4407-9e8a-91c0058b1a74_600x.png?v=1648108782",
+
+        },
+        {
+            id: "028",
+            image: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/5f0f5487-b3fe-4122-b8df-0c7f4798c29d_600x.png?v=1623787656",
+            name: "boAt BassHeads 182",
+            price: "499",
+            main_price: "1290",
+            category: "wired",
+            review: "470",
+            rating: "4.8",
+            discount: "106",
+            detailimage1: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/5f0f5487-b3fe-4122-b8df-0c7f4798c29d_600x.png?v=1623787656",
+            detailimage2: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/boat-bassheads-182-red_600x.png?v=1598044334",
+            detailimage3: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/boat-bassheads-182-black_600x.png?v=1598044333",
+            detailimage4: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/boat-bassheads-182-red_600x.png?v=1598044334",
+            detailimage5: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/5f0f5487-b3fe-4122-b8df-0c7f4798c29d_600x.png?v=1623787656",
+
+            colourimage1: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/5f0f5487-b3fe-4122-b8df-0c7f4798c29d_600x.png?v=1623787656",
+            colourimage2: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/boat-bassheads-182-red_600x.png?v=1598044334",
+            colourimage3: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/boat-bassheads-182-black_600x.png?v=1598044333",
+        },
+        {
+            id: "017",
+            image: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/m2_852f9f1f-5498-4e5a-b6a2-0645a7abbc41_600x.png?v=1639153081",
+            name: "boAt Rockerz 333 Pro",
+            price: "1699",
+            main_price: "2990",
+            category: "wireless",
+            review: "52",
+            rating: "4.9",
+            discount: "43",
+            detailimage1: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/R333Pro-FI_Red06_07e3549e-1192-445c-b6d7-a421ff1f2a17_700x.png?v=1655132327",
+            detailimage2: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/R333Pro-FI_Red07_1dc6a985-2ec8-4dd8-b8d3-66cd2a6b9a8a_700x.png?v=1655132328",
+            detailimage3: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/R333Pro-FI_Red04_cc5938c2-57e6-424f-b267-cc8a465bb791_700x.png?v=1655132327",
+            detailimage4: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/R333Pro-FI_Red02_f22a15b1-b5a3-460f-b0ef-5de7fab3b9f3_700x.png?v=1655132322",
+            detailimage5: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/R333Pro-FI_Red03_ad0b8c86-1f03-4f51-89cb-3cb3d916cefa_700x.png?v=1655132320",
+            colourimage1: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/m2_852f9f1f-5498-4e5a-b6a2-0645a7abbc41_600x.png?v=1639153081",
+            colourimage2: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/GREEN_0bbd189a-8ab1-4806-80f2-95f679d0712d_600x.png?v=1652792832",
+            colourimage3: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/m3_08324ce2-cdd9-44d6-8f5b-849fda265ba8_600x.png?v=1639153082",
+        },
+        {
+            id: "026",
+            image: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/103blk_400x.png?v=1574927262",
+            name: "boAt BassHeads 103",
+            price: "369",
+            main_price: "1290",
+            category: "wired",
+            review: "470",
+            rating: "4.8",
+            discount: "71",
+            detailimage1: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/103blk_600x.png?v=1574927262",
+            detailimage2: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/103b_600x.png?v=1574927262",
+            detailimage3: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/103_mintgreen_600x.png?v=1632906887",
+            detailimage4: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/103_mintorange_600x.png?v=1632906888",
+            detailimage5: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/103_600x.png?v=1574927262",
+
+            colourimage1: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/103_600x.png?v=1574927262",
+            colourimage2: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/103b_600x.png?v=1574927262",
+            colourimage3: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/103_mintgreen_600x.png?v=1632906887",
+        }
+    ]
+    
+    display(productData,"#bestsell");
+
+    function display(productData,id) {
+        document.querySelector(id).innerHTML = "";
+        productData.forEach(function (elem) {
+            let card = document.createElement("div");
+            let img = document.createElement("img");
+            img.src = elem.image;
+            
+
+            let inner_div = document.createElement("div");
+            let name = document.createElement("h3");
+            name.innerText = elem.name;
+
+            let rating_div = document.createElement("div");
+
+            let rating = document.createElement("p");
+            rating.innerHTML = '<span style="color:red;font-size:120%;">&starf;</span>' + ` ${elem.rating} `;
+            rating.style.fontSize = "15px";
+
+            let review = document.createElement("p");
+            review.innerText = ` | ${elem.review} reviews`;
+            review.style.fontSize = "15px";
+
+            rating_div.append(rating, review);
+
+            let hr = document.createElement("hr");
+            let price_div = document.createElement("div");
+
+            let price = document.createElement("p");
+            price.innerText = `₹ ${elem.price}  `;
+            price.style.color = "red";
+            price.style.fontWeight = "bold"
+
+            let striked_through_price = document.createElement("p");
+            striked_through_price.innerText = `   ₹ ${elem.main_price}`;
+            striked_through_price.style.textDecoration = "line-through";
+            striked_through_price.style.color = "gray";
+            price_div.append(price, striked_through_price);
+            let remaining = Number(elem.main_price) - Number(elem.price);
+            let discount = document.createElement("p");
+            discount.innerText = `You Save: ₹ ${remaining} (${elem.discount}%)`;
+            discount.style.fontSize = "13px";
+            let addToCart = document.createElement("button");
+            addToCart.innerText = "Add To Cart"
+            inner_div.append(name, rating_div, hr, price_div, discount, addToCart);
+            card.append(img, inner_div);
+            document.querySelector(id).append(card);
+        })
+    }
+
+let watch_data = [
+{
+            id: "003",
+            image: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/a6549acb-b075-4c3e-8ed3-9c9fcba32d42_400x.png?v=1625046216",
+            name: "boAt Storm",
+            price: "2499",
+            main_price: "5990",
+            category: "smartwatch",
+            review: "35",
+            rating: "4.8",
+            discount: "58",
+            detailimage1: "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Untitled-2_03_7374765d-37f5-4b69-afaf-69fa3a4b779f.jpg?v=1639989127",
+            detailimage2: "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Untitled-2_04_53359eb9-4b7f-440c-be8d-3cc34fc70ef7.jpg?v=1639989127",
+            detailimage3: "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Untitled-2_05_e2ad7811-f0e2-40f9-acf2-d71e1d8d94bb.jpg?v=1639989127",
+            detailimage4: "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Untitled-2_04_53359eb9-4b7f-440c-be8d-3cc34fc70ef7.jpg?v=1639989127",
+            detailimage5: "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Untitled-2_05_e2ad7811-f0e2-40f9-acf2-d71e1d8d94bb.jpg?v=1639989127",
+            colourimage1: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/DisneyStormPackaging3.1585_420x.png?v=1640110653",
+            colourimage2: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/DisneyStormPackaging3.1579_420x.png?v=1640110355",
+            colourimage3: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/DisneyStormPackaging3.1591_420x.png?v=1640110480",
+        },
+        {
+            id: "004",
+            image: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/5752f5e4-89e0-4f84-b7fe-4d9f85771046_400x.png?v=1625157753",
+            name: "boAt Watch Flash",
+            price: "2499",
+            main_price: "6990",
+            category: "smartwatch",
+            review: "188",
+            rating: "4.8",
+            discount: "64",
+            detailimage1: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/9da7e1ae-89f2-42c4-9714-76ac5ec83817_600x.png?v=1625045743",
+            detailimage2: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/5752f5e4-89e0-4f84-b7fe-4d9f85771046_600x.png?v=1625157753",
+            detailimage3: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/9e5b8bf2-29bf-4e1c-b24f-f8f4196ac14b_600x.png?v=1625157764",
+            detailimage4: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/5752f5e4-89e0-4f84-b7fe-4d9f85771046_600x.png?v=1625157753",
+            detailimage5: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/9e5b8bf2-29bf-4e1c-b24f-f8f4196ac14b_600x.png?v=1625157764",
+            colourimage1: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/9da7e1ae-89f2-42c4-9714-76ac5ec83817_600x.png?v=1625045743",
+            colourimage2: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/5752f5e4-89e0-4f84-b7fe-4d9f85771046_600x.png?v=1625157753",
+            colourimage3: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/9e5b8bf2-29bf-4e1c-b24f-f8f4196ac14b_600x.png?v=1625157764",
+        },
+        {
+            id: "005",
+            image: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main-blue_d6503e2e-e0b1-4c4e-af28-2164903baf9f_400x.png?v=1640237576",
+            name: "boAt Watch Iris",
+            price: "4399",
+            main_price: "11999",
+            category: "smartwatch",
+            review: "154",
+            rating: "4.8",
+            discount: "63",
+            detailimage1: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/mainblack_600x.png?v=1640237575",
+            detailimage2: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main-blue_d6503e2e-e0b1-4c4e-af28-2164903baf9f_600x.png?v=1640237576",
+            detailimage3: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/mainred_600x.png?v=1640237576",
+            detailimage4: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main-blue_d6503e2e-e0b1-4c4e-af28-2164903baf9f_600x.png?v=1640237576",
+            detailimage5: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/mainred_600x.png?v=1640237576",
+            colourimage1: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/mainblack_600x.png?v=1640237575",
+            colourimage2: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main-blue_d6503e2e-e0b1-4c4e-af28-2164903baf9f_600x.png?v=1640237576",
+            colourimage3: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/mainred_600x.png?v=1640237576",
+        },
+        {
+            id: "006",
+            image: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main6_2_8e1cdd84-4a34-4e92-97c5-0e1d4ba6da46_400x.png?v=1646393710",
+            name: "TRebel Watch Xtend‌",
+            price: "3499",
+            main_price: "7990",
+            category: "smartwatch",
+            review: "125",
+            rating: "5.0",
+            discount: "56",
+            detailimage1: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main1_86ea6392-558a-4943-ab86-f9f12fe8f4d9_600x.png?v=1646393709",
+            detailimage2: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main6_2_8e1cdd84-4a34-4e92-97c5-0e1d4ba6da46_600x.png?v=1646393710",
+            detailimage3: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main3_1_751a0a5b-cf0d-48af-9205-e87de3b75f71_600x.png?v=1646393710",
+            detailimage4: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main6_2_8e1cdd84-4a34-4e92-97c5-0e1d4ba6da46_600x.png?v=1646393710",
+            detailimage5: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main3_1_751a0a5b-cf0d-48af-9205-e87de3b75f71_600x.png?v=1646393710",
+            colourimage1: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main1_86ea6392-558a-4943-ab86-f9f12fe8f4d9_600x.png?v=1646393709",
+            colourimage2: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main6_2_8e1cdd84-4a34-4e92-97c5-0e1d4ba6da46_600x.png?v=1646393710",
+            colourimage3: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main3_1_751a0a5b-cf0d-48af-9205-e87de3b75f71_600x.png?v=1646393710",
+        }
+]
+
+    display(watch_data,"#watches");   
+
+
+let wireless_data = [
+        {
+            id: "010",
+            image: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/airdopes-121-v2-blue_400x.png?v=1612765376",
+            name: "boAt Airdopes 121 v2",
+            price: "1299",
+            main_price: "2999",
+            category: "airdopes",
+            review: "114",
+            rating: "4.8",
+            discount: "57",
+            detailimage1: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/airdopes-121-v2-blue_400x.png?v=1612765376",
+            detailimage2: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/AD-121v2-FI-3_6b4f840b-570d-4588-aa69-1548f897cabc_700x.jpg?v=1655128550",
+            detailimage3: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/AD-121v2-FI-5.2_dd5e723b-7448-4353-a693-058b15fa4812_700x.jpg?v=1655128551",
+            detailimage4: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/AD-121v2-FI-3_6b4f840b-570d-4588-aa69-1548f897cabc_700x.jpg?v=1655128550",
+            detailimage5: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/AD-121v2-FI-5.2_dd5e723b-7448-4353-a693-058b15fa4812_700x.jpg?v=1655128551",
+            colourimage1: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/airdopes-121-v2-black_600x.png?v=1612765376",
+            colourimage2: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/airdopes-121-v2-blue_600x.png?v=1612765376",
+            colourimage3: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/airdopes-121-v2-pink_600x.png?v=1612765377",
+        },
+        {
+            id: "020",
+            image: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/rockerz-518-blue_600x.png?v=1613731627",
+            name: "boAt Rockerz 518",
+            price: "1599",
+            main_price: "3990",
+            category: "wireless",
+            review: "54",
+            rating: "4.9",
+            discount: "60",
+            detailimage1: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/rockerz-518-blue_600x.png?v=1613731627",
+            detailimage2: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/rockerz-518-green_600x.png?v=1613457278",
+            detailimage3: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/rockerz-518-orange_600x.png?v=1613457279",
+            detailimage4: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/rockerz-518-red_600x.png?v=1613457279",
+            detailimage5: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/rockerz-518-green_600x.png?v=1613457278",
+            colourimage1: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/rockerz-518-blue_600x.png?v=1613731627",
+            colourimage2: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/rockerz-518-red_600x.png?v=1613457279",
+            colourimage3: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/rockerz-518-red_600x.png?v=1613457279",
+        },
+        {
+            id: "018",
+            image: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/0cfa4417-0213-4b49-b78e-0ae68aeb7057_400x.png?v=1625046144",
+            name: "boAt Rockerz 550",
+            price: "1299",
+            main_price: "2999",
+            category: "wireless",
+            review: "114",
+            rating: "4.8",
+            discount: "57",
+            detailimage1: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/R55050mmdrivers_700x.jpg?v=1655202470",
+            detailimage2: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/R550clubbed_c2b31f0f-7a9c-4d4d-b507-41527ec05133_700x.jpg?v=1655202767",
+            detailimage3: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/R550physicalnoisereduction_92fd89c6-9b4c-464b-8632-93d56c7bbc8b_700x.jpg?v=1655202766",
+            detailimage4: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/R550playbacktime20hrs_7a0973ed-75b9-4a58-ab23-f233e151f821_700x.jpg?v=1655202767",
+            detailimage5: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/R550ergonomicdesign_df538497-c30c-4617-86b3-27337b0e65a8_700x.jpg?v=1655202766",
+            colourimage1: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/48b829ed-bee6-492e-b9bc-1824d5c63bd4_600x.png?v=1625046144",
+            colourimage2: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/0d8d4561-6985-44ba-9e70-4998c40f4df3_600x.png?v=1625046144",
+            colourimage3: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/0cfa4417-0213-4b49-b78e-0ae68aeb7057_600x.png?v=1625046144",
+        },
+        {
+            id: "015",
+            image: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/airdopes-431-blue_50e2fdb3-7886-49af-a570-a083001946f6_400x.png?v=1614424769",
+            name: "TRebel Airdopes 431",
+            price: "1999",
+            main_price: "5999",
+            category: "airdopes",
+            review: "452",
+            rating: "4.7",
+            discount: "67",
+            detailimage1: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/airdopes-431-red_c84f66f4-64b4-496d-897b-d1a5613a6585_600x.png?v=1614424769",
+            detailimage2: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/airdopes-431-blue_50e2fdb3-7886-49af-a570-a083001946f6_72x.png?v=1614424769",
+            detailimage3: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/airdopes-431-red_c84f66f4-64b4-496d-897b-d1a5613a6585_600x.png?v=1614424769",
+            detailimage4: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/airdopes-431-blue_50e2fdb3-7886-49af-a570-a083001946f6_72x.png?v=1614424769",
+            detailimage5: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/airdopes-431-red_c84f66f4-64b4-496d-897b-d1a5613a6585_600x.png?v=1614424769",
+            colourimage1: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/airdopes-431-red_c84f66f4-64b4-496d-897b-d1a5613a6585_600x.png?v=1614424769",
+            colourimage2: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/airdopes-431-blue_50e2fdb3-7886-49af-a570-a083001946f6_72x.png?v=1614424769",
+            colourimage3: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/airdopes-431-red_c84f66f4-64b4-496d-897b-d1a5613a6585_600x.png?v=1614424769",
+        }
+]
+
+    display(wireless_data,"#trending_wireless"); 
+
+
+let wired_data = [
+    {
+            id: "025",
+            image: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/103_600x.png?v=1574927262",
+            name: "boAt BassHeads 103",
+            price: "369",
+            main_price: "1290",
+            category: "wired",
+            review: "470",
+            rating: "4.8",
+            discount: "71",
+            detailimage1: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/103_600x.png?v=1574927262",
+            detailimage2: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/103blk_600x.png?v=1574927262",
+            detailimage3: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/103b_600x.png?v=1574927262",
+            detailimage4: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/103_mintgreen_600x.png?v=1632906887",
+            detailimage5: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/103_mintorange_600x.png?v=1632906888",
+            colourimage1: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/103_600x.png?v=1574927262",
+            colourimage2: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/103blk_600x.png?v=1574927262",
+            colourimage3: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/103b_600x.png?v=1574927262",
+        },
+        {
+            id: "026",
+            image: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/103blk_400x.png?v=1574927262",
+            name: "boAt BassHeads 103",
+            price: "369",
+            main_price: "1290",
+            category: "wired",
+            review: "470",
+            rating: "4.8",
+            discount: "71",
+            detailimage1: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/103blk_600x.png?v=1574927262",
+            detailimage2: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/103b_600x.png?v=1574927262",
+            detailimage3: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/103_mintgreen_600x.png?v=1632906887",
+            detailimage4: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/103_mintorange_600x.png?v=1632906888",
+            detailimage5: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/103_600x.png?v=1574927262",
+
+            colourimage1: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/103_600x.png?v=1574927262",
+            colourimage2: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/103b_600x.png?v=1574927262",
+            colourimage3: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/103_mintgreen_600x.png?v=1632906887",
+        },
+
+        {
+            id: "027",
+            image: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/7d635fe4-8c4c-4c4b-8c00-6065455dc608_600x.png?v=1625046386",
+            name: "boAt BassHeads 242",
+            price: "449",
+            main_price: "1490",
+            category: "wired",
+            review: "330",
+            rating: "4.8",
+            discount: "70",
+            detailimage1: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/7d635fe4-8c4c-4c4b-8c00-6065455dc608_600x.png?v=1625046386",
+            detailimage2: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/4d45fa60-7d5b-4dfe-b6ef-65df28058130_600x.png?v=1625046386",
+            detailimage3: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/4eed59f3-6f28-4511-9240-c043e2523482_600x.png?v=1625046386",
+            detailimage4: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/51a9e051-8c98-4dcd-9d03-9cae0b35bb0f_600x.png?v=1625046386",
+            detailimage5: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/c1cb9fb6-b924-4474-a8f6-dc06ebc6c610_600x.png?v=1625046386",
+
+            colourimage1: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/7d635fe4-8c4c-4c4b-8c00-6065455dc608_600x.png?v=1625046386",
+            colourimage2: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/4d45fa60-7d5b-4dfe-b6ef-65df28058130_600x.png?v=1625046386",
+            colourimage3: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/4eed59f3-6f28-4511-9240-c043e2523482_600x.png?v=1625046386",
+        },
+
+        {
+            id: "028",
+            image: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/5f0f5487-b3fe-4122-b8df-0c7f4798c29d_600x.png?v=1623787656",
+            name: "boAt BassHeads 182",
+            price: "499",
+            main_price: "1290",
+            category: "wired",
+            review: "470",
+            rating: "4.8",
+            discount: "106",
+            detailimage1: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/5f0f5487-b3fe-4122-b8df-0c7f4798c29d_600x.png?v=1623787656",
+            detailimage2: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/boat-bassheads-182-red_600x.png?v=1598044334",
+            detailimage3: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/boat-bassheads-182-black_600x.png?v=1598044333",
+            detailimage4: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/boat-bassheads-182-red_600x.png?v=1598044334",
+            detailimage5: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/5f0f5487-b3fe-4122-b8df-0c7f4798c29d_600x.png?v=1623787656",
+
+            colourimage1: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/5f0f5487-b3fe-4122-b8df-0c7f4798c29d_600x.png?v=1623787656",
+            colourimage2: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/boat-bassheads-182-red_600x.png?v=1598044334",
+            colourimage3: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/boat-bassheads-182-black_600x.png?v=1598044333",
+        }
+]
+
+    display(wired_data,"#trending_wired"); 
+
+let headphones_data=[
+        {
+            id: "017",
+            image: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/m2_852f9f1f-5498-4e5a-b6a2-0645a7abbc41_600x.png?v=1639153081",
+            name: "boAt Rockerz 333 Pro",
+            price: "1699",
+            main_price: "2990",
+            category: "wireless",
+            review: "52",
+            rating: "4.9",
+            discount: "43",
+            detailimage1: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/R333Pro-FI_Red06_07e3549e-1192-445c-b6d7-a421ff1f2a17_700x.png?v=1655132327",
+            detailimage2: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/R333Pro-FI_Red07_1dc6a985-2ec8-4dd8-b8d3-66cd2a6b9a8a_700x.png?v=1655132328",
+            detailimage3: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/R333Pro-FI_Red04_cc5938c2-57e6-424f-b267-cc8a465bb791_700x.png?v=1655132327",
+            detailimage4: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/R333Pro-FI_Red02_f22a15b1-b5a3-460f-b0ef-5de7fab3b9f3_700x.png?v=1655132322",
+            detailimage5: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/R333Pro-FI_Red03_ad0b8c86-1f03-4f51-89cb-3cb3d916cefa_700x.png?v=1655132320",
+            colourimage1: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/m2_852f9f1f-5498-4e5a-b6a2-0645a7abbc41_600x.png?v=1639153081",
+            colourimage2: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/GREEN_0bbd189a-8ab1-4806-80f2-95f679d0712d_600x.png?v=1652792832",
+            colourimage3: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/m3_08324ce2-cdd9-44d6-8f5b-849fda265ba8_600x.png?v=1639153082",
+        },
+        {
+            id: "018",
+            image: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/0cfa4417-0213-4b49-b78e-0ae68aeb7057_400x.png?v=1625046144",
+            name: "boAt Rockerz 550",
+            price: "1299",
+            main_price: "2999",
+            category: "wireless",
+            review: "114",
+            rating: "4.8",
+            discount: "57",
+            detailimage1: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/R55050mmdrivers_700x.jpg?v=1655202470",
+            detailimage2: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/R550clubbed_c2b31f0f-7a9c-4d4d-b507-41527ec05133_700x.jpg?v=1655202767",
+            detailimage3: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/R550physicalnoisereduction_92fd89c6-9b4c-464b-8632-93d56c7bbc8b_700x.jpg?v=1655202766",
+            detailimage4: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/R550playbacktime20hrs_7a0973ed-75b9-4a58-ab23-f233e151f821_700x.jpg?v=1655202767",
+            detailimage5: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/R550ergonomicdesign_df538497-c30c-4617-86b3-27337b0e65a8_700x.jpg?v=1655202766",
+            colourimage1: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/48b829ed-bee6-492e-b9bc-1824d5c63bd4_600x.png?v=1625046144",
+            colourimage2: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/0d8d4561-6985-44ba-9e70-4998c40f4df3_600x.png?v=1625046144",
+            colourimage3: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/0cfa4417-0213-4b49-b78e-0ae68aeb7057_600x.png?v=1625046144",
+        },
+        {
+            id: "019",
+            image: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/eb8e0fbd-c412-48b3-9c91-5b49ddf35800_600x.png?v=1625045744",
+            name: "boAt Rockerz 450",
+            price: "1499",
+            main_price: "3990",
+            category: "wireless",
+            review: "41",
+            rating: "4.8",
+            discount: "62",
+            detailimage1: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/eb8e0fbd-c412-48b3-9c91-5b49ddf35800_600x.png?v=1625045744",
+            detailimage2: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/last-beige_700x.jpg?v=1654921668",
+            detailimage3: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/premium-matte-finish_521de285-f320-4311-ba28-757ab27542ef_700x.jpg?v=1655194807",
+            detailimage4: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/lightweight-beige_700x.jpg?v=1654921665",
+            detailimage5: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/drivers-blue_700x.jpg?v=1654921668",
+            colourimage1: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/eb8e0fbd-c412-48b3-9c91-5b49ddf35800_600x.png?v=1625045744",
+            colourimage2: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/7499af44-9d7a-489c-80f0-51f7799289e4_600x.png?v=1625045491",
+            colourimage3: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/ae22e3a6-9590-401a-94f6-d8ecf42b4932_600x.png?v=1625046351",
+        },
+        {
+            id: "020",
+            image: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/rockerz-518-blue_600x.png?v=1613731627",
+            name: "boAt Rockerz 518",
+            price: "1599",
+            main_price: "3990",
+            category: "wireless",
+            review: "54",
+            rating: "4.9",
+            discount: "60",
+            detailimage1: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/rockerz-518-blue_600x.png?v=1613731627",
+            detailimage2: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/rockerz-518-green_600x.png?v=1613457278",
+            detailimage3: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/rockerz-518-orange_600x.png?v=1613457279",
+            detailimage4: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/rockerz-518-red_600x.png?v=1613457279",
+            detailimage5: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/rockerz-518-green_600x.png?v=1613457278",
+            colourimage1: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/rockerz-518-blue_600x.png?v=1613731627",
+            colourimage2: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/rockerz-518-red_600x.png?v=1613457279",
+            colourimage3: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/rockerz-518-red_600x.png?v=1613457279",
+        }
+]
+
+    display(headphones_data,"#headphones")   
+    
+    
+let gaming_data=[
+{
+            id: "041",
+            image: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main1_65ff249b-c4f8-4dad-ae88-2aae76723ce2_600x.png?v=1643477993",
+            name: "boAt Immortal 700",
+            price: "2499",
+            main_price: "6990",
+            category: "gaming",
+            review: "0",
+            rating: "5",
+            discount: "64",
+            detailimage1: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main1_65ff249b-c4f8-4dad-ae88-2aae76723ce2_600x.png?v=1643477993",
+            detailimage2: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main2_33ed4e4f-8ef4-4c8a-a0c7-68216dfafa4a_600x.png?v=1643477993",
+            detailimage3: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main2_33ed4e4f-8ef4-4c8a-a0c7-68216dfafa4a_600x.png?v=1643477993",
+            detailimage4: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main2_33ed4e4f-8ef4-4c8a-a0c7-68216dfafa4a_600x.png?v=1643477993",
+            detailimage5: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main2_33ed4e4f-8ef4-4c8a-a0c7-68216dfafa4a_600x.png?v=1643477993",
+            colourimage1: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main2_33ed4e4f-8ef4-4c8a-a0c7-68216dfafa4a_600x.png?v=1643477993",
+            colourimage2: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main2_33ed4e4f-8ef4-4c8a-a0c7-68216dfafa4a_600x.png?v=1643477993",
+            colourimage3: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main2_33ed4e4f-8ef4-4c8a-a0c7-68216dfafa4a_600x.png?v=1643477993"
+        },
+        {
+            id: "042",
+            image: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/1_600x.png?v=1625748155",
+            name: "boAt Immortal 1000D",
+            price: "2299",
+            main_price: "5990",
+            category: "gaming",
+            review: "12",
+            rating: "4.9",
+            discount: "62",
+            detailimage1: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/1_600x.png?v=1625748155",
+            detailimage2: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/2_f3aa2756-01f3-4e39-80bc-7b4f6551c7aa_600x.png?v=1625748159",
+            detailimage3: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main_green_551e0f56-cb9c-4910-be88-3c9fd1383c50_600x.png?v=1652363760",
+            detailimage4: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main_green_551e0f56-cb9c-4910-be88-3c9fd1383c50_600x.png?v=1652363760",
+            detailimage5: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main_green_551e0f56-cb9c-4910-be88-3c9fd1383c50_600x.png?v=1652363760",
+            colourimage1: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main_green_551e0f56-cb9c-4910-be88-3c9fd1383c50_600x.png?v=1652363760",
+            colourimage2: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/1_600x.png?v=1625748155",
+            colourimage3: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/2_f3aa2756-01f3-4e39-80bc-7b4f6551c7aa_600x.png?v=1625748159",
+        },
+        {
+            id: "043",
+            image: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/IM1300_main_4_600x.png?v=1632715015",
+            name: "boAt Immortal 1300",
+            price: "2899",
+            main_price: "9990",
+            category: "gaming",
+            review: "8",
+            rating: "4.8",
+            discount: "71",
+            detailimage1: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/IM1300_main_1_600x.png?v=1632715016",
+            detailimage2: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/IM1300_main_2_600x.png?v=1632715015",
+            detailimage3: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/IM1300_main_3_600x.png?v=1632715016",
+            detailimage4: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/IM1300_main_4_600x.png?v=1632715015",
+            detailimage5: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/IM1300_main_4_600x.png?v=1632715015",
+            colourimage1: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/IM1300_main_4_600x.png?v=1632715015",
+            colourimage2: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/IM1300_main_3_600x.png?v=1632715016",
+            colourimage3: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/IM1300_main_2_600x.png?v=1632715015"
+        },
+        {
+            id: "44",
+            image: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main-700_600x.png?v=1643632678",
+            name: "boAt Immortal 400",
+            price: "1999",
+            main_price: "6990",
+            category: "gaming",
+            review: "2",
+            rating: "4.5",
+            discount: "71",
+            detailimage1: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main-700_600x.png?v=1643632678",
+            detailimage2: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main2-700_600x.png?v=1643632679",
+            detailimage3: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main2-700_600x.png?v=1643632679",
+            detailimage4: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main2-700_600x.png?v=1643632679",
+            detailimage5: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main2-700_600x.png?v=1643632679",
+            colourimage1: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main2-700_600x.png?v=1643632679",
+            colourimage2: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main2-700_600x.png?v=1643632679",
+            colourimage3: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main2-700_600x.png?v=1643632679",
+        }
+]   
+
+        display(gaming_data,"#gaming")
+</script>

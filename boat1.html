@@ -6,130 +6,191 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        #banner{
-            width: 100%;
-            height: 30px;
-            line-height: 30px;
-            margin-top: 0px;
-            text-align: center;
-            background-color: red;
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            font-size: 14px;
-            font-weight: 600;
-            color: white;
-        }
-        #navbar{
-            display: grid;
-            grid-template-columns: repeat(3,1fr);
-          
-        }
-        #navbar>div{
-            /* border: 1px solid yellow; */
-            background-color: black;
-        }
-        #logo{
-        margin-top: 20px;
-        margin-bottom: -10px;
-        margin-left: 30px;
-        height: 45%;
-       }
-       #navigators>ul{
+        /* NAVBAR STARTS HERE  */
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap');
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    #banner{
+        width: 100%;
+        height: 30px;
+        line-height: 30px;
+        margin-top: 0px;
+        text-align: center;
+        background-color: red;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        color: white;
+     }
+
+    #navbar {
+        height: 70px;
+        display: grid;
+        background-color: #000000;
+        align-items: center;
+        grid-template-columns: repeat(3, 1fr);
+        position: sticky;
+        top: 0px;
+    }
+
+    #navbar>div {
+        /* border: 1px solid yellow; */
+        background-color: black;
+    }
+
+    #navbar>div:first-child {
+        display: flex;
+        align-items: center;
+
+    }
+
+    #logo {
+        width: 15%;
+        margin-left: 150px;
+    }
+
+    ​
+
+    /* #logo{
+    margin-top: 20px;
+    margin-bottom: -10px;
+    margin-left: 30px;
+    height: 45%;
+   } */
+    #navigators {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #navigators>ul {
         list-style: none;
         text-align: center;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-       }
-       #navigators>ul>li{
+    }
+
+    #navigators>ul>li {
         display: inline-block;
         font-size: medium;
-        
-        line-height: 80px;
+
+        line-height: 40px;
         margin-left: 15px;
-       }
-       #navigators>ul>li>a{
+    }
+
+    #navigators>ul>li>a {
         text-decoration: none;
         color: white;
-        
-       }
-       #submenu{
-	    position: absolute;
-	    background: #000000;
-	    width: 100%;
-	    left: 0;
-	    top: 100px;
-        padding: 10px 0;
-	    display: grid;
-        grid-template-columns: repeat(4,1fr);
-        gap: 10px;
-	    visibility: hidden;
-	    line-height: 24px;
+
     }
-    ul li:hover #submenu{
-	    visibility: visible;
-    } 
-   .col>img{
-            width:280px;
-            height: 130px;
-   }
-   .col>img:hover{
-    filter: brightness(50%);
-   }
-   #submenu_more{
-	    position: absolute;
-	    background: #000000;
-	    top: 80px;
+
+    #submenu {
+        position: absolute;
+        background: #000000;
+        width: 100%;
+        left: 0;
+        top: 60px;
+        padding: 10px 0;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
         gap: 10px;
-	    visibility: hidden;
-	    line-height: 24px;
+        visibility: hidden;
+        line-height: 24px;
+    }
+
+    ul li:hover #submenu {
+        visibility: visible;
+    }
+
+    .col>img {
+        width: 280px;
+        height: 130px;
+    }
+
+    .col>img:hover {
+        filter: brightness(50%);
+    }
+
+    #submenu_more {
+        position: absolute;
+        background: #000000;
+        top: 60px;
+        gap: 10px;
+        visibility: hidden;
+        line-height: 24px;
         padding: 10px;
     }
-    ul li:hover #submenu_more{
-	    visibility: visible;
+
+    ul li:hover #submenu_more {
+        visibility: visible;
     }
-    #submenu_more>p{
+
+    #submenu_more>p {
         color: white;
         padding: 15px;
         text-align: start;
         line-height: 0%;
     }
+
     #submenu_more>p:hover {
-     color: grey;
-     cursor: pointer;
+        color: grey;
+        cursor: pointer;
     }
-    input{
-        margin-top: 20px;
+
+    input {
+
         height: 40px;
-        width: 200px;
+        width: 250px;
         border-radius: 20px;
-        font-size: larger;
+        font-size: large;
         padding-left: 20px;
         display: inline-block;
     }
-    #navbar> div:last-child{
+
+    #navbar>div:last-child {
         display: flex;
+
     }
+
     /* Last profile, cart and gift card section in below div */
-    #search_sec>div{                            
+    #search_sec>div {
         /* border: 1px solid greenyellow; */
-        width: 100%;
+        width: 30%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        /* gap: 10px; */
+        align-items: center;
+        justify-content: center;
+        margin-left: 30px;
+        margin-right: 30px;
     }
+
+    /* .smallicon{
+    border: 1px solid white;
+} */
+    .smallicon>img {
+        width: 50%;
+    }
+
    
+
+/* NAVBAR OVER ^^^^^ */
+
     /* Sliding images section */
 
     .slider{
         width: 100%;
+        
+    }
+    .slider img{
+        width: 100%;
      
     }
-    .slider>img{
-        width: 100%;
-    }
-
-   
-
     .slider>button:nth-child(2){
         position: absolute;
         top: 310px;
@@ -149,12 +210,229 @@
         color: red;
       
     }
+    body{
+        background-color: #141414;
+    }
+    
+    
+/* SLIDER OVER^^^^^ */
+
+    .collection_title{
+        width: 100%;
+        color: white;
+        text-align: center;
+        padding: 40px;
+        font-size: 25px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .container{
+        border: 1px solid yellow;
+        width: 100%;
+        height: 400px;
+    }
+
+
+
+ /* INTERNAL DIV OF PRODUCTS    */
+   
+    .prod{
+        margin: auto;
+        width: 85%;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        border: 1px solid yellowgreen;
+        grid-template-columns: repeat(4, 1fr);
+        
+    }
+    .prod>div {
+        display: flex;
+        border-radius: 10px;
+        background-color: #e3e3e3;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+    .prod>div>img {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+    }
+    .prod>div>p {
+        position: relative;
+        width: 28%;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        font-weight: 500;
+        text-transform: uppercase;
+        font-size: 14px;
+        padding: 3px;
+        display: inline-block;
+        bottom: 285px;
+        margin-bottom: -45px;
+    }
+    .prod>div>div>div>span {
+        margin-left: 0px;
+        margin-right: 5px;
+        font-size: 16px;
+    }
+    .prod>div>div>div>span:first-child {
+        font-size: 15px;
+    }
+
+    .prod>div>div {
+        padding: 10px;
+        margin: 8px;
+        border-radius: 10px;
+        background-color: white;
+    }
+    .prod>div>div>h3 {
+        margin-top: -2px;
+        margin-bottom: 5px;
+        margin-left: 5px;
+
+    }
+
+    .prod>div>div>p {
+        margin-top: -15px;
+        font-size: 15px;
+        margin-left: 5px;
+    }
+    .prod>div>div>hr {
+        margin-top: -8px;
+        background-color: #e3e3e3;
+        height: 0.5px;
+    }
+
+    .prod>div>div>button {
+        width: 100%;
+        margin-top: -8px;
+        background-color: red;
+        color: white;
+        text-transform: uppercase;
+        font-size: 15px;
+        border: none;
+        padding: 8px;
+        font-weight: bold;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .prod>div>div>div {
+        display: flex;
+        padding: 5px;
+        font-size: 15px;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .prod>div>div>div>p {
+        margin-top: -8px;
+        margin-right: 5px;
+    }
+    .prod p{
+        line-height: 32px;
+    }
     
 
+ /* INTERNAL DIV OF PRODUCTS^^^^^^ */
+
+                 
+    /* SECOND SLIDER */
+        #slider_2container{
+        border: 1px solid white;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+
+    .slider_2{
+        width:80%;        
+    }
+    .slider_2 img{
+        width: 100%;
+
+    }
+    #slider_2container>button{
+        font-size: 60px;
+        font-weight: bolder;
+        background-color: transparent;
+        border: none;
+        color: red;
+    }
+    
+                                                                                          /* boatblogs CSS */
+    #boatblogs{
+        width: 100%;
+        color: black;
+        background-color: #dcdcdc;
+        text-align: center;
+        padding: 30px;
+        font-size: 25px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    #blogs_container{
+        /* border: 1px solid yellow; */
+        background-color: #dcdcdc;
+        width: 100%;
+        /* height: 400px; */
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        
+    }
+    #blogs_container>div{
+        /* border: 1px solid blue; */
+        margin: 20px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 20px;
+        font-weight: 700;
+    }
+    #blogs_container>div>p:hover{
+        color: red;
+    }
+    #blogs_container img{
+        width: 100%;
+        transition: transform .5s ease;
+    }
+    #blogs_container div{
+        overflow: hidden;
+    }
+
+    #blogs_container img:hover{
+        transform: scale(1.1);
+    }
+    #blogs_container+div{
+         /* border: 1px solid yellow; */
+         background-color: #dcdcdc;
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #blogs_container+div>button{
+        border: none;
+        background-color: #ff0000;
+        width: 180px;
+        height: 50px;
+        font-weight: 700;
+        color: white;
+        font-size: 15px;
+        border-radius: 5px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+       
+    }
+    #blogs_container+div>button:hover{
+        filter: brightness(70%);
+    }
+
+                                                                                        /* boatblogs css over */
    
     </style>
 </head>
 <body>
+    <!-- NAVBAR HTML STARTS HERE -->
     <div id="banner">Big savings on your favourite boAt products. Grab now!</div>
     <div id="navbar">
         <div>
@@ -162,7 +440,7 @@
         </div>
         <div id="navigators">
            <ul>
-            <li><a href="">Shop</a>
+            <li><a href="">Shop &#9660</a>
                 <div id="submenu">
                     <div class="col">
                         <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/dropdown-TWS_540x.png?v=1612338251" >
@@ -210,7 +488,7 @@
                 </div>
             </li>
             <li><a href="">Offer Zone</a></li>
-            <li><a href="">More</a>
+            <li><a href="">More &#9660</a>
                 <div id="submenu_more">
                     <p>Daily Deals</p>
                     <p>Gifting</p>
@@ -225,25 +503,132 @@
         </div>
         <div id="search_sec">
             <input type="text" placeholder="Search...">
-            <div></div>
+            <div>
+                <div class="smallicon">
+                    <img src="https://icon-library.com/images/profile-icon-white/profile-icon-white-22.jpg" alt="">
+                </div>
+                <div class="smallicon">
+                    <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/gift.png?v=1606314809" alt="">
+                </div>
+                <div class="smallicon">
+                    <img src="https://icon-library.com/images/shopping-cart-icon-white/shopping-cart-icon-white-11.jpg" alt="">
+                </div>
+            </div>
             
         </div>
     </div>
+    <!-- NAVBAR HTML OVER^^^^^ -->
+
 
     <!-- slideshow here*********** -->
 
     <div class="slider">
-        <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/2000x650_5496c9d9-c8d1-49c1-a7c2-83055a261f8a_1000x.jpg?v=1654509146" alt="">
+        <a href="link1.com"> <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/2000x650_5496c9d9-c8d1-49c1-a7c2-83055a261f8a_1000x.jpg?v=1654509146" alt=""></a>
+       
         <button class="slide_button"><</button>
         <button class="slide_button">></button>
     </div>  
+    <!-- SLIDSHOW HTML OVER^^^^ -->
+
+
+                                                                     <!-- Best Sellers -->
+    <div class="collection_title">
+        <h2>Best Sellers</h2>
+    </div>
+    <div class="container">
+        <div id="bestsell" class="prod">
+
+        </div>
+    </div>
+
+                                                                     <!-- smart watches -->
+    <div class="collection_title">
+        <h2>Smart Watches</h2>
+    </div>
+    <div class="container">
+        <div id="watches" class="prod">
+    </div>
+                                                                    <!-- New Launches -->
+    <div class="collection_title">
+        <h2>New Launches</h2>
+    </div>
+    <div id="slider_2container">
+            <button class="slide2_button"><</button>
+        <div class="slider_2"><a href="link1.com">
+            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/2000x650_5496c9d9-c8d1-49c1-a7c2-83055a261f8a_1000x.jpg?v=1654509146" alt="">
+        </a>
+        </div>  
+            <button class="slide2_button">></button>
+        
+    </div>
+                                                                <!-- Trending Wireless -->
+    <div class="collection_title">
+        <h2>Trending Wireless</h2>
+    </div>
+    <div class="container">
+        <div id="trending_wireless" class="prod">
+    </div>
+                                                                <!-- Trending Wired --> 
+    <div class="collection_title">
+        <h2>Trending Wired</h2>
+    </div>
+    <div class="container">
+        <div id="trending_wired" class="prod">
+    </div>
+                                                            <!-- Trending Headphones --> 
+    <div class="collection_title">
+        <h2>Trending Headphones</h2>
+    </div>
+    <div class="container">
+        <p style="color: white;">Container here</p>
+    </div>
+                                                                  <!-- Gaming --> 
+    <div class="collection_title">
+        <h2>Gaming</h2>
+    </div>
+    <div class="container">
+        <p style="color: white;">Container here</p>
+    </div>
+                                                                  <!-- Boatblogs --> 
+    <div id="boatblogs">
+        <h2>boAt Blogs</h2>
+    </div>
+    <div id="blogs_container">
+        <div>
+            <div>
+                <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Earphone_1296x_540x_25759241-1386-4661-bec0-bad7c111178f_540x.png?v=1650620291" alt="">
+            </div>
+            <p>
+                Earphones Buying Guide - Everything You Need To Know
+            </p>
+        </div>
+        <div>
+            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Main-banner_520x500_540x_d7c9944e-0985-498b-9a89-3a54d32c9dd2_520x.png?v=1650620307" alt="">
+            <p>
+                The Ultimate Smartwatch Guide - Get The World On Your Wrist
+            </p>
+        </div>
+        <div>
+            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/articles/blog_600x.jpg?v=1654260672" alt="">
+            <p>
+                It Is Time To Rock The Streets With boAt Headphones
+            </p>
+        </div>
+    </div>
+    <div>
+        <button>EXPLORE BLOGS</button>
+    </div>
+                                                                    <!-- Boatblogs over -->
+    
+
 </body>
 </html>
 
 <script>
     // slider part
 
-    let img = document.querySelector(".slider>img");
+    let img = document.querySelector(".slider img");
+    let url= document.querySelector(".slider>a")
     let buttons =document.querySelectorAll(".slide_button");
     let imgNum=0;
     let imgArr=[
@@ -253,6 +638,13 @@
     "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/WEB_c1e0eae6-69d2-4898-a82c-9bffc641a1ec_1400x.jpg?v=1654366545"
     ]
 
+    let linkArr=[
+        "link1.com",
+        "link2.com",
+        "link3com",
+        "link4.com"
+    ]
+
     buttons[0].addEventListener("click", function(){
         if(imgNum===0){
             imgNum=imgArr.length-1;
@@ -260,6 +652,7 @@
             imgNum--;
         }
         img.src=imgArr[imgNum];
+        url.setAttribute("href",linkArr[imgNum]);
     })
 
     buttons[1].addEventListener("click", function(){
@@ -269,6 +662,7 @@
             imgNum++;
         }
         img.src=imgArr[imgNum];
+        url.setAttribute("href",linkArr[imgNum]);
     })
 
     setInterval(function() {
@@ -278,5 +672,329 @@
             imgNum++;
         }
         img.src=imgArr[imgNum];
+        url.setAttribute("href",linkArr[imgNum]);
 }, 4000);
+
+
+// 1ST SLIDER JS OVER ^^^^^
+
+
+// 2nd SLIDER PART
+
+
+    let img2 = document.querySelector(".slider_2 img");
+    let url2= document.querySelector(".slider_2>a")
+    let buttons2 =document.querySelectorAll(".slide2_button");
+    let imgNum2=0;
+    let imgArr2=[
+    "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/2000x650_5496c9d9-c8d1-49c1-a7c2-83055a261f8a_1000x.jpg?v=1654509146",
+    "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/web34_0dc3ef24-e76e-4587-b21d-948137c138e3_1400x.jpg?v=1654670966",
+    "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/135-WEB_1400x.jpg?v=1655189587",
+    "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/WEB_c1e0eae6-69d2-4898-a82c-9bffc641a1ec_1400x.jpg?v=1654366545"
+    ]
+
+    let linkArr2=[
+        "link1.com",
+        "link2.com",
+        "link3com",
+        "link4.com"
+    ]
+
+    buttons2[0].addEventListener("click", function(){
+        if(imgNum2===0){
+            imgNum2=imgArr2.length-1;
+        }else {
+            imgNum2--;
+        }
+        img2.src=imgArr2[imgNum2];
+        url2.setAttribute("href",linkArr2[imgNum]);
+    })
+
+    buttons2[1].addEventListener("click", function(){
+        if(imgNum2===imgArr2.length-1){
+            imgNum2=0;
+        }else {
+            imgNum2++;
+        }
+        img2.src=imgArr2[imgNum2];
+        url2.setAttribute("href",linkArr2[imgNum]);
+    })
+
+    setInterval(function() {
+        if(imgNum2===imgArr2.length-1){
+            imgNum2=0;
+        }else {
+            imgNum2++;
+        }
+        img2.src=imgArr2[imgNum2];
+        url2.setAttribute("href",linkArr2[imgNum]);
+}, 4000);
+
+// 2ND SLIDER OVER ^^^^^
+
+
+// PRODUCT DATA
+
+let productData = [
+        {
+            id: "001",
+            image: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/cream_600x.png?v=1642405569",
+            name: "boAt Airdopes 131",
+            price: "999",
+            main_price: "2990",
+            category: "smartwatch",
+            rating: "4.8",
+            review: "328",
+            discount: "74",
+            stock: "in",
+        },
+        {
+            id: "002",
+            image: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main1_15634ca0-9f81-4d11-b891-9a1496f709b1_600x.png?v=1641801688",
+            name: "boAt Rockerz 330",
+            price: "1499",
+            main_price: "2990",
+            category: "smartwatch",
+            rating: "5.0",
+            review: "328",
+            discount: "53",
+            stock: "in",
+        },
+        {
+            id: "003",
+            image: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main-img-R333-1_400x.png?v=1641801662",
+            name: "boAt Rockerz 333",
+            price: "1199",
+            main_price: "3990",
+            category: "smartwatch",
+            rating: "4.8",
+            discount: "58",
+            review: "328",
+            stock: "in",
+        },
+        {
+            id: "004",
+            image: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main2_529ecf13-c993-4fe7-a2d6-9357f1a47db4_600x.png?v=1650387008",
+            name: "boAt Watch Flash",
+            price: "3199",
+            main_price: "7990",
+            category: "smartwatch",
+            rating: "4.8",
+            discount: "64",
+            review: "328",
+            stock: "in",
+        }
+    ]
+    
+    display(productData,"#bestsell");
+
+    function display(productData,id) {
+        document.querySelector(id).innerHTML = "";
+        productData.forEach(function (elem) {
+            let card = document.createElement("div");
+            let img = document.createElement("img");
+            img.src = elem.image;
+            
+
+            let inner_div = document.createElement("div");
+            let name = document.createElement("h3");
+            name.innerText = elem.name;
+
+            let rating_div = document.createElement("div");
+
+            let rating = document.createElement("p");
+            rating.innerHTML = '<span style="color:red;font-size:120%;">&starf;</span>' + ` ${elem.rating} `;
+            rating.style.fontSize = "15px";
+
+            let review = document.createElement("p");
+            review.innerText = ` | ${elem.review} reviews`;
+            review.style.fontSize = "15px";
+
+            rating_div.append(rating, review);
+
+            let hr = document.createElement("hr");
+            let price_div = document.createElement("div");
+
+            let price = document.createElement("p");
+            price.innerText = `₹ ${elem.price}  `;
+            price.style.color = "red";
+            price.style.fontWeight = "bold"
+
+            let striked_through_price = document.createElement("p");
+            striked_through_price.innerText = `   ₹ ${elem.main_price}`;
+            striked_through_price.style.textDecoration = "line-through";
+            striked_through_price.style.color = "gray";
+            price_div.append(price, striked_through_price);
+            let remaining = Number(elem.main_price) - Number(elem.price);
+            let discount = document.createElement("p");
+            discount.innerText = `You Save: ₹ ${remaining} (${elem.discount}%)`;
+            discount.style.fontSize = "13px";
+            let addToCart = document.createElement("button");
+            addToCart.innerText = "Add To Cart"
+            inner_div.append(name, rating_div, hr, price_div, discount, addToCart);
+            card.append(img, inner_div);
+            document.querySelector(id).append(card);
+        })
+    }
+
+let watch_data = [
+        {
+            id: "001",
+            image: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main_black_72207866-b34c-4b47-885d-998168d62245_400x.png?v=1648108781",
+            name: "boAt Watch Wave Lite",
+            price: "1799",
+            main_price: "6990",
+            category: "smartwatch",
+            rating: "4.8",
+            review: "328",
+            discount: "74",
+            stock: "in",
+        },
+        {
+            id: "002",
+            image: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main1_0ae2597d-dee4-42fd-9a18-eb4ae0b3bc43_400x.png?v=1647765304",
+            name: "boAt Watch Wave Pro",
+            price: "3299",
+            main_price: "6990",
+            category: "smartwatch",
+            rating: "5.0",
+            review: "328",
+            discount: "53",
+            stock: "in",
+        },
+        {
+            id: "003",
+            image: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/a6549acb-b075-4c3e-8ed3-9c9fcba32d42_400x.png?v=1625046216",
+            name: "boAt Storm",
+            price: "2499",
+            main_price: "5990",
+            review: "328",
+            category: "smartwatch",
+            rating: "4.8",
+            discount: "58",
+            stock: "in",
+        },
+        {
+            id: "004",
+            image: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/5752f5e4-89e0-4f84-b7fe-4d9f85771046_400x.png?v=1625157753",
+            name: "boAt Watch Flash",
+            price: "2499",
+            main_price: "6990",
+            category: "smartwatch",
+            review: "328",
+            rating: "4.8",
+            discount: "64",
+            stock: "in",
+        }
+]
+
+    display(watch_data,"#watches");   
+
+
+let wireless_data = [
+{
+            id: "001",
+            image: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/5f7d33ad-39a9-4426-836e-c300814839b9_600x.png?v=1625046105",
+            name: "boAt Rockerz 235 V2",
+            price: "999",
+            main_price: "2990",
+            category: "smartwatch",
+            rating: "4.8",
+            review: "328",
+            discount: "74",
+            stock: "in",
+        },
+        {
+            id: "002",
+            image: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/245v2_main_1_600x.png?v=1627276362",
+            name: "boAt Rockerz 245 V2",
+            price: "3299",
+            main_price: "6990",
+            category: "smartwatch",
+            rating: "5.0",
+            review: "328",
+            discount: "53",
+            stock: "in",
+        },
+        {
+            id: "003",
+            image: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/7499af44-9d7a-489c-80f0-51f7799289e4_400x.png?v=1625045491",
+            name: "boAt Rockerz 550",
+            price: "2499",
+            main_price: "5990",
+            review: "328",
+            category: "smartwatch",
+            rating: "4.8",
+            discount: "58",
+            stock: "in",
+        },
+        {
+            id: "004",
+            image: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/0cfa4417-0213-4b49-b78e-0ae68aeb7057_400x.png?v=1625046144",
+            name: "boAt Rockerz 450",
+            price: "1499",
+            main_price: "1999",
+            category: "smartwatch",
+            review: "328",
+            rating: "4.8",
+            discount: "64",
+            stock: "in",
+        }
+]
+
+    display(wireless_data,"#trending_wireless"); 
+
+
+    let wired_data = [
+    {
+            id: "001",
+            image: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/553af994-244a-4b81-9d9e-9967a1b966b3_600x.png?v=1625046259",
+            name: "boAt BassHeads 100",
+            price: "399",
+            main_price: "999",
+            category: "smartwatch",
+            rating: "4.8",
+            review: "328",
+            discount: "74",
+            stock: "in",
+        },
+        {
+            id: "002",
+            image: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/103_600x.png?v=1574927262",
+            name: "boAt BassHeads 103",
+            price: "369",
+            main_price: "1290",
+            category: "smartwatch",
+            rating: "5.0",
+            review: "328",
+            discount: "53",
+            stock: "in",
+        },
+        {
+            id: "003",
+            image: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/boat-bassheads-102-red_600x.png?v=1633152280",
+            name: "boAt BassHeads 102",
+            price: "449",
+            main_price: "1290",
+            review: "328",
+            category: "smartwatch",
+            rating: "4.8",
+            discount: "58",
+            stock: "in",
+        },
+        {
+            id: "004",
+            image: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/eab9128d-65cf-42ce-83a1-03492ec6157d_600x.png?v=1625046386",
+            name: "boAt BassHeads 242",
+            price: "449",
+            main_price: "1490",
+            category: "smartwatch",
+            review: "328",
+            rating: "4.8",
+            discount: "64",
+            stock: "in",
+        }
+]
+
+    display(wired_data,"#trending_wired"); 
 </script>

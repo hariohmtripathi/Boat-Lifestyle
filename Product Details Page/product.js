@@ -1,3 +1,30 @@
+// pop up
+let clickNav= document.getElementById("navbar");
+clickNav.addEventListener("click",openPop);
+
+let cartPop= document.getElementById("cartPop");
+
+function openPop(event){
+cartPop.style.display="block";
+}
+
+let close= document.getElementById("closeBtn");
+close.addEventListener("click",closePop)
+function closePop(event){
+    cartPop.style.display="none";
+}
+
+window.addEventListener("click",outsideClick);
+
+function outsideClick(event){
+    console.log(event.target);
+    if(event.target==cartPop){
+        cartPop.style.display="none";
+    }
+}
+
+
+// hovering over small images changes big image
 function changeImg(smallImg){
     let bigImg= document.querySelector("#bigImage>img");
     // let smallImg= document.querySelector("#smallImages>div>img")

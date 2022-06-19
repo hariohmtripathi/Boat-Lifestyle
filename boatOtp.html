@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', sans-serif;
+        }
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+        #verifyOtp {
+            width: 20%;
+            display: flex;
+            flex-direction: column;
+            /* text-align: center; */
+            justify-content: center;
+            align-items: center;
+            align-content: space-between;
+            padding-bottom: 3%;
+            padding-top: 3%;
+        }
+
+        #verifyOtp>h3 {
+            font-weight: 450;
+            font-size: 20px;
+            margin: 3% 0;
+
+        }
+   h3+p{
+    font-size: 18px;
+    font-weight:500;
+    color: rgb(117, 110, 110);
+   }
+        h3+p+p {
+            font-weight: bold;
+            margin: 3% 0;
+            font-size: 18px;
+        }
+        p+input {
+            width: 50%;
+
+        }
+
+        .inp {
+            display: flex;
+            justify-content:space-evenly;
+            width: 58%;
+        }
+        .inp>input{
+            width: 18%;
+            height:44px;
+            border-radius: 5px;
+            text-align: center;
+            border: 2px solid grey;
+            background-color: rgb(244, 255, 249);
+        }
+    </style>
+</head>
+<body>
+    <div id="verifyOtp">
+        <h3>Verify Mobile Number</h3>
+        <p>Enter the OTP recieved on</p>
+        <p>+91- 1234567890 <img src="https://pdp.gokwik.co/assets/icons/edit.svg" alt=""></p>
+        <div class="inp">
+            <input type="text" id="ist" maxlength="1" onkeyup="clickEvent(this,'sec')">
+            <input type="text" id="sec" maxlength="1" onkeyup="clickEvent(this,'third')">
+            <input type="text" id="third" maxlength="1" onkeyup="clickEvent(this,'fourth')">
+            <input type="text" id="fourth" maxlength="1" onkeyup="clickEvent(this,'fifth')">
+         
+        </div>
+    </div>
+</body>
+</html>
+<script type="text/javascript">
+  function clickEvent(first,last)
+  {
+    if(first.value.length)
+    {
+       document.getElementById(last).focus();
+    }
+  }
+</script>

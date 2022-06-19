@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/8697db6a09.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            width: 90%;
+            margin: auto;
+            display: flex;
+            height: 600px;
+        }
+        #paymentDone {
+            width: 30%;
+            padding: 10px 0;
+            margin: auto;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+            padding: 40px;
+            height:20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(244, 255, 249);
+        }
+
+        #paymentDone>div {
+            color: #6bb337;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        #paymentDone>div>div:first-child{
+         color: #6bb337;
+         font-size: 70px;
+         margin-right: 20px;
+        }
+        #paymentDone>div>div:last-child :first-child{
+            font-size: 30px;
+            color: #6bb337;
+            margin-bottom: 10px;
+        }
+        #paymentDone>div>div:last-child :last-child{
+            color:grey;
+        }
+         
+    </style>
+</head>
+
+<body>
+    <div id="paymentDone">
+        <div>
+            <div><i class="fa-regular fa-circle-check"></i></div>
+            <div>
+                <p>Order palced successfully!</p>
+                <p>We will notify you when your order has shipped</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

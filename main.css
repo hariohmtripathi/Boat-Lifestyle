@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* #boat_blogs>h1{
+    text-align: center;
+} */
+#boat_blogs{
+   width: 100%;
+   background-color: #dcdcdc;
+}
+#boat_blogs>h1{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+#btn{
+    width:15%;
+    margin: auto;
+    text-align: center;
+    /* height:50px; */
+    border-radius: 10px;
+    margin-top: 40px;
+    padding-bottom: 30px;
+}
+#btn>button{
+    width:100%;
+    background-color: red;
+    color: white;
+    height: 45px;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    border: none;
+    
+}
+#blog_container{
+    width: 100%;
+    display: flex;
+justify-content: space-evenly;
+}
+#blog_container>div{
+width: 32%;
+}
+#blog_container>div>img{
+    width: 100%;
+    margin-bottom: 2%;
+}
+.text{
+    font-size: 25px;
+
+}
+.text:hover{
+    font-size: 25px;
+   color: red;
+   cursor: pointer;
+}
+/* #boat_blogs>button{
+    background-color:black;
+    display: flex;
+    align-items: center;
+} */
+#meetBoat{
+    width: 100%;
+    background-color: #141414;
+    padding: 20px;
+}
+#meetIn{
+    width: 70%;
+    display: flex;
+    background-color: #141414;
+    padding: 20px;
+    margin: auto;
+}
+#meetIn>div{
+    width: 40%;
+   color: white;
+   margin: auto;
+  
+}
+#meetIn>div:nth-child(2){
+    width: 50%;
+   height: 400px;
+   padding-top: 90px;
+   margin-left: 200px;
+}
+#meetIn>div>img{
+  width: 100%;
+  border-radius: 10px;
+}
+hr{
+    height: 2px;
+    width: 20%;
+     background-color: red;
+     border: none;
+     margin-top: 3px;
+}
+#meetIn>div>h3{
+    color:red;
+    margin-bottom: 30px;
+    font-size: 25px;
+    font-weight: 200;
+    margin: 20px 0px 20px 0px;
+}
+#meetIn>div>p{
+    margin: 20px 0px 20px 0px;
+    line-height: 23px;
+}
+#meetB{
+    text-decoration: none;
+}
+/* What they say about us section */
+#hawabazi{
+    width: 100%;
+    border: 1px solid black;
+   display: flex;
+   justify-content: space-evenly;
+   background-color: #dcdcdc;
+   padding: 100px 0;
+   /* overflow: hidden; */
+}
+#hawabazi>div{
+    width: 25%;
+   margin-top: -50px;
+   overflow: hidden;
+}
+#hawabazi>div>div:first-child{
+    border-radius: 150px;
+    border: 2px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   overflow:visible;
+    width: 80%;
+    margin: auto;
+    margin-top: -50px;
+    height:270px ;
+}
+#hawabazi>div>div:first-child>a>img{
+    width: 100%;
+    margin-bottom :-80px;;
+}
+#hawabazi>div>div:last-child{
+    background-color: #ed1d24;
+    margin-top: -60px;
+    padding: 36px;
+    text-align: center;
+     border-bottom-left-radius: 20px;
+     border-bottom-right-radius: 20px;
+}
+.hw-text{
+    color: white;
+    margin-top: 40px;
+    font-size: 16px;
+}
+.hw-text+button{
+    background-color:white;
+    color: red;
+    width: 60%;
+    height: 40px;
+    font-size: 16px;
+    font-weight:700;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.hw-text+button:hover{
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+}
+/* In the press section css */
+#press_main{
+    width: 100%;
+    background-color: #141414;
+    padding: 30px;
+}
+#press_main>h1{
+    color: white;
+    text-align: center;
+    font-size: 40px;
+}
+#press_main>h1+p{
+    color: white;
+    text-align: center;
+    font-size: 17px;
+    margin:40px 0;
+}
+.imageContent{
+    display: flex;
+    width: 70%;
+    margin: auto;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.imageContent>div>img{
+   width: 140px;
+   filter: grayscale(100%);
+}
+.imageContent>div>img:hover{
+    width: 140px;
+    filter: grayscale(0%);
+    cursor: pointer;
+ }
+/* image */
+#img_section{
+    width: 100%;
+    background-color: #141414;
+}
+#img_section>img{
+    width: 100%;
+}
+/* brand Promise section starts here */
+#brand_promise{
+    width: 100%;
+    background-color: #141414;
+    padding: 30px;
+}
+#brand_promise>h1{
+    text-align: center;
+    color:white;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+#brand_content{
+    width: 65%;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+}
+#brand_content>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-size:20px;
+}
+.brand_text{
+    color: white;
+}
+.brand_img{
+    width: 50px;
+
+}
+/* middle text */
+#middleText{
+    width: 100%;
+    background-color: 
+    #2c2c2c;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+}
+#middleText>p{
+    width: 65%;
+    text-align: center;
+    margin: auto;
+    font-weight: lighter;
+    color: white;
+}

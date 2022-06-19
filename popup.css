@@ -1,0 +1,248 @@
+/* pop up */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+
+}
+#cartPop{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.3);
+    display: block;
+    z-index: 1;
+    
+    /* opacity: .1; */
+}
+html::-webkit-scrollbar {
+    width: 10px;
+  }
+#cartContainer{
+    width: 30%;
+    background-color: white;
+    opacity: 1;
+    margin-left: 70%;
+    animation: slideIn 1s ease-out forwards 1;
+}
+@keyframes slideIn{
+    0%{
+        transform: translateX(10%);
+    }
+}
+#cartHeader{
+    width: 100%;
+    background-color: #ff0000;
+    color: white;
+    /* padding: 10px; */
+}
+#cartHeader>div{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 5px;
+    margin: -8px auto;
+}
+#cartHeader>div>p{
+    margin: 0px;
+}
+#cartHeader>div>span{
+    margin: 0px;
+}
+#closeBtn{
+    border: 2px solid white;
+    font-size: 40px;
+}
+#freeDelivery{
+    background-color: black;
+    color: white;
+    padding-block-end: 10px;
+    font-size: 16px;;
+}
+#freeDelivery>p{
+    margin: 0px 8px;
+}
+#cart{
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#cart>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#cart>div>p{
+    font-size: 18px;
+    color: #ff0000;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+#cart>div>p+button{
+    border: 1px solid transparent;
+    font-size: 15px;
+    padding: 12px 100px;
+    background-color: #ff0000;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+}
+#cart>div>p+button+button{
+    border: 2px solid  #ff0000;
+    font-size: 15px;
+    padding: 12px 100px;
+    background-color:transparent;
+    color:  #ff0000;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#product
+{
+    width: 100%;
+    height: 100px;
+   border: 1px solid green;
+    display: flex;
+}
+#image 
+{
+    width: 30%;
+    height: 100px;
+    border: 1px solid red;
+   
+}
+#price
+{
+    width: 70%;
+    height: 100px;
+    border: 1px solid black;
+   
+}
+
+#price > div 
+{
+    width: 100%;
+    height: 30px;
+    border: 1px solid green;
+  
+}
+#delete
+{
+    width: 15px;
+}
+#price div:first-child
+{
+    font-weight: bold;
+}
+#price > div:nth-child(2)
+{
+    font-weight: bold;
+    color: red;
+}
+
+#price > div:nth-child(2) span{
+    color:gray;
+    font-weight: 100;
+}
+
+#price > div:nth-child(3)span
+{
+    color: red;
+}
+#add
+{
+    display: flex;
+}
+#add > div{
+    display: flex;
+  
+    height: 30px;
+    width: 18%;
+    justify-content: center;
+    align-items: center;
+}
+#add > button
+{
+    width: 10%;
+    border: 1px solid black;
+    border-radius: 50%;
+    color: red;
+    font-weight: bold;
+    background-color: transparent;
+   
+   
+}
+
+#add>div:nth-child(2)
+{
+    font-weight: bold;
+}
+
+
+
+#add>div:nth-child(4) > button
+{
+   color: gray;
+   padding: 5px;
+   border-radius: 5px;
+   border: 1px solid gray;
+   margin-left:55px;
+   background-color: transparent;
+}
+
+#add>div:last-child
+{
+    margin-left: 40px;
+    
+
+}
+#free {
+    display: flex;
+    margin-bottom: 10px;
+    }
+#free >div:first-child{
+ 
+    display: flex;
+
+ 
+    margin-right: 100px;
+    font-weight: 500;
+    
+   
+}
+#free >div:last-child{
+  
+ margin-left: 100px;
+
+}
+
+
+#total{
+    display: flex;
+ 
+    }
+#total >div:first-child{
+ 
+    
+    
+    justify-content: space-around;
+    margin-right: 100px;
+    font-weight: 500;
+ font-weight: bold;
+    
+   
+}
+#total >div:last-child{
+  
+ margin-left: 124px;
+ font-weight: bold;
+ margin-bottom: 5px;
+}

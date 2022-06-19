@@ -1,0 +1,27 @@
+.allimages
+{
+height: 1vh;
+
+}
+
+.smallimages img {
+    height: 19vh;
+    cursor: pointer;
+    opacity: .6;
+    display: grid;
+    grid-template-columns: auto;
+    margin-top: 20px;
+}
+
+#image-box
+{
+    height: auto;
+    opacity:1;
+   
+}
+
+
+.smallimages img:hover {
+    opacity: 1;
+}
+

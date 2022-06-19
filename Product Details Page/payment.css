@@ -1,0 +1,447 @@
+#popUp {
+    border: 1px solid transparent;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+    z-index: 1;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    font-family: sans-serif;
+}
+
+#popUpContent {
+    margin: auto;
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 65%;
+    background-color: #f6f6f6;
+    height: 500px;
+    border-radius: 15px;
+    /* opacity: 1; */
+    padding: 20px;
+
+}
+
+#popUpContent>div:nth-child(1) {
+    width: 3%;
+    height: 7%;
+    position: absolute;
+    font-size: 50px;
+    top: 70px;
+    right: 265px;
+    background-color: #f6f6f6;
+    border-radius: 0px 0px 30px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#popUpContent>div:nth-child(1)>p {
+    margin: 0px;
+}
+
+#content {
+    width: 60%;
+    background-color: white;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+#logo {
+    width: 100%;
+}
+
+#logo>img {
+    width: 70px;
+}
+
+#mobile {
+    width: 100%;
+    margin-top: 10px;
+}
+
+#mobile>div {
+    width: 95%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.circle {
+    margin-right: 5px;
+    padding: 5px;
+    font-size: 18px;
+    width: 20px;
+    height: 200px;
+}
+
+#mobile>hr {
+    width: 100%;
+    margin-top: 8px;
+
+}
+
+
+
+#continueBtn {
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+#continueBtn>button {
+    /* width: 100%; */
+    border: 1px solid transparent;
+    background-color: black;
+    padding: 20px 90px;
+    font-size: 18px;
+    color: white;
+    border-radius: 10px;
+    
+    cursor: pointer;
+}
+
+#popFooter {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+#popFooter>div:last-child {
+    display: flex;
+    align-items: center;
+}
+
+#finalCart {
+    display: flex;
+    width: 35%;
+    flex-direction: column;
+
+}
+
+#orderSummary {
+    border-radius: 15px;
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+#orderSummary>div:nth-child(1) {
+    display: flex;
+
+}
+
+#orderSummary>div:last-child>p {
+    line-height: 10px;
+    margin-bottom: 10px;
+
+}
+
+#productFinal {
+    height: 130px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin: 10px;
+}
+
+#summary {
+    padding-bottom: 10px;
+    margin-top: 20px;
+}
+
+#summary>div {
+    display: flex;
+    height: 22px;
+    align-content: center;
+    /* border: 1px solid red; */
+    justify-content: space-between;
+}
+
+#summary>div>p {
+
+    line-height: 10px;
+}
+
+#summary>hr {
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+#applyCoupan {
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+
+    padding: 15px;
+    justify-content: center;
+}
+
+#applyCoupan>img {
+    width: 13%;
+}
+
+#card {
+    width: 100%;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+#card>img {
+    width: 20%;
+    height: 60px;
+}
+
+#card>div {
+    margin-left: 10px;
+}
+
+#verifyOtp {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* text-align: center; */
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+    padding-bottom: 3%;
+    padding-top: 3%;
+    position: absolute;
+    visibility: hidden;
+}
+
+#verifyOtp>h3 {
+    font-weight: 450;
+    font-size: 20px;
+    margin: 3% 0;
+
+    font-weight: bolder;
+
+}
+
+#verifyOtp>h3+p {
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(117, 110, 110);
+
+    font-weight: bolder;
+}
+
+#verifyOtp>h3+p+p {
+    font-weight: bold;
+    margin: 3% 0;
+    font-size: 18px;
+
+    font-weight: bolder;
+}
+
+#verifyOtp>p+input {
+    width: 50%;
+
+}
+
+.inp {
+    display: flex;
+    justify-content: space-evenly;
+    width: 58%;
+}
+
+.inp>input {
+    width: 18%;
+    height: 44px;
+    border-radius: 5px;
+    text-align: center;
+    border: 2px solid grey;
+    background-color: rgb(244, 255, 249);
+}
+
+/* Address CSS */
+
+#input2 {
+    width: 100%;
+    /* height: 10vh; */
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    /* display: block; */
+    /* z-index: 2; */
+    position: relative;
+    visibility: visible;
+}
+
+#input2>div {
+    /* border: 1px solid red; */
+    width: 95%;
+    padding-left: 30px;
+}
+
+#input2>div>div {
+    border: 1px solid rgb(221, 221, 221);
+    width: 80%;
+    gap: 5px;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    text-align: start;
+}
+
+#input2>div>div>input {
+    margin-top: 10px;
+    accent-color: black;
+}
+
+#input2>div>div>div {
+    /* border: 1px solid rebeccapurple; */
+    width: 100%;
+
+}
+
+
+#input2>div p {
+    font-size: 18px;
+    line-height: 30px;
+
+}
+
+#input2>div>div+div>input {
+    background-color: black;
+}
+
+
+/* PaymentPay CSS */
+
+#input3 {
+    width: 100%;
+    /* height: 10vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    visibility: hidden;
+}
+
+#input3>div {
+    width: 80%;
+    margin-top: 25px;
+
+    text-align: center;
+}
+
+#input3>div>div>p {
+    line-height: 15px;
+    font-size: 14px;
+}
+
+#input3>div>div>div {
+    display: flex;
+    margin: auto;
+    margin-top: 10px;
+    width: 70%;
+    border-radius: 10px;
+    padding: 8px;
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+#input3>div>div>div>div:nth-child(2) {
+    display: flex;
+    align-items: center;
+}
+
+#input3>div>div>div>div:nth-child(1) {
+    display: flex;
+
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#input3>div>div>div>div>p {
+
+    margin: 3px;
+    text-align: left;
+    line-height: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    background-color: black;
+    color: white;
+}
+
+/* Payment page CSS */
+
+#input {
+    width: 100%;
+    position: absolute;
+    /* height: 10vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* display: none; */
+    /* z-index: 1; */
+    visibility: hidden;
+
+}
+
+#input>div {
+    width: 50%;
+    margin-top: 25px;
+    text-align: center;
+}
+
+#input>div>div:nth-child(2) {
+    width: 100%;
+    border: 1px solid gray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 25px;
+    border-radius: 5px;
+    margin-top: 10px;
+
+    /* display: block; */
+}
+
+#input>div>h3+div>input {
+    width: 80%;
+
+    /* padding: 20px; */
+    font-size: 20px;
+    padding: 15px;
+    border: 1px solid transparent;
+    border-radius: 0px 5px 5px 0px;
+    outline: none;
+
+    /* webkit to remove up an down arrow from input box of type number */
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#input>div>div+div {
+    width: 100%;
+    font-size: 14px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+#input>div>div+div>input {
+    background-color: black;
+}

@@ -1,0 +1,707 @@
+html{
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+        
+}
+
+body{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* top red box */
+/* #topOne{
+    width: 100%;
+    background-color: red;
+}
+#topOne>div{
+    width: 98%;
+    background-color: red;
+    padding: 18px;
+    margin: auto;
+    text-align: center;
+    color: white;
+    font-size: 27px;
+} */
+#banner {
+    width: 100%;
+    height: 37px;
+    line-height: 40px;
+    /* margin-top: 0px; */
+    text-align: center;
+    background-color: red;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    color: white;
+}
+
+/* navbar */
+/* #navbar{
+    width: 100%;
+    height: 77px;
+    background-color: black;
+    margin-top: -7px;
+
+} */
+
+/* home and page link below navbar */
+#home{
+    width: 100%;
+}
+#home>div{
+    display: flex;
+    background-color: #f5f5f5;
+    padding-top: 12px;
+    padding-left: 50px;
+    color: gray;
+}
+#home>div>p:last-child{
+    margin-left: 5px;
+    color: black;
+}
+/* pop up */
+
+/* product and its rating part */
+#description{
+    width: 100%;
+}
+#description>div{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: flex-start;
+    padding: 45px;
+    background-color: #f5f5f5;
+    margin-top:-12px;
+    /* box-sizing: border-box; */
+}
+#description>div>div{
+    margin-right: 25px;
+}
+#smallImages{
+    width: 5%;
+}
+#smallImages>div{
+    border: 1px solid gray;
+    width: 70px;
+    height: 70px;
+    margin-bottom: 10px;
+}
+#smallImages>div>img{
+    width: 100%;
+    height: 70px;
+    cursor: pointer;
+    opacity: 1;
+}
+#smallImages>div>img:hover{
+    opacity: 1;
+}
+
+#bigImage{
+    width: 36%;
+    height: 470px;
+    background-color: #e1e1e1;
+}
+#bigImage>img{
+    width: 100%;
+    height: 470px;
+}
+
+#productTitle{
+    width: 36%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+#title{
+    font-size: 20px;
+    margin-top: -30px;
+
+}
+#title>h1{
+    font-size: 42px;
+    margin-bottom: 0px;
+    color: black;
+}
+#title>p{
+    margin: 0px;
+    color: gray;
+    line-height: 18px;
+}
+#productTitle>hr{
+    width: 100%;
+    margin-top: 6px;
+    background-color: gray;
+}
+#rating{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 10px;
+}
+#rating>span{
+    margin-left: 1px;
+    font-weight: bold;
+}
+#rating>p{
+    margin-left: 1px;
+}
+#rating>div{
+    width: 20px;
+    height: 20px;
+    background-color: #f5f5f5;
+    margin-left: 5px;
+}
+#rating>div>img{
+    width: 100%;
+    height: 100%;
+    background-color: #f5f5f5;
+}
+
+#stars{
+    font-size: 12px;
+}
+#rating>img{
+    width: 60px;
+    height: 15px;
+}
+#image_select{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+#image_select>div:first-child{
+    display: flex;
+    color: gray;
+    font-size: 18px;
+}
+#image_select>div:first-child>p>span{
+    font-size: 18px;
+    color: black;
+
+}
+#images{
+    border: 1px solid transparent;
+    background-color:#f5f5f5;
+}
+#zest{
+    border: 1px dashed gray;
+    background-color: #e1e1e1;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    font-size: 14px;
+}
+#zest>div{
+    display:flex;
+    align-items: center;
+}#zest img{
+    width: 100px;
+    height: 50px;
+    margin-left: 2px;
+}
+.greentext{
+    color: #0ace5f;
+}
+.redtext{
+    color: red;
+}
+#productadd{
+    width: 31%;
+    height: 450px;
+    display: flex;
+    align-items: flex-end;
+}
+#priceBox{
+    border: 1px solid gray;
+    border-radius: 10px;
+    background-color: #efefef;
+    width: 94%;
+    font-size: 18px;
+    color: gray;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#price{
+    width: 80%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* margin-top:-5px; */
+}
+
+#price>h1{
+    color: orangered;
+    font-size: 38px;
+}
+#price strike{
+    color: gray;
+    font-size: 28px;
+    margin-left: 10px;
+}
+#priceBox>p{
+    /* margin-top:20px; */
+    font-size: 14px;
+}
+#stock{
+    background-color: #e1e1e1;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+#stock>p:first-child{
+    margin-left: 20px;
+}
+#stock>p:last-child{
+    margin-right: 20px;
+}
+#inccart{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+#increase{
+    width: 50%;
+    height: 30px;
+    border: 1px solid gray;
+    display: flex;
+    font-size: 25px;
+    justify-content: space-around;
+    align-items: center;
+}
+#increase>button{
+    display: block;
+    border: 1px solid transparent;
+    font-size: 25px;
+    background-color: transparent;
+}
+#priceBox>button{
+    border: 1px solid red;
+    width: 100%;
+    background-color: red;
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* service div */
+#service{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+}
+#service>div{
+    width: 18%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 18px;
+}
+#service>div>img{
+    width: 60px;
+    height: 60px;
+}
+
+/* text link navigation */
+#textLink{
+    width: 100%;
+    background-color: black;
+    
+}
+#textLink>div{
+    width: 54%;
+    margin: auto;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    color: #b2b2b2;
+    
+}
+
+#textLink>div>h3:first-child{
+    color: red;
+}
+
+/* experience the magic */
+#magic{
+    width: 100%;
+}
+#magic>img{
+    width: 100%;
+    /* height: 150px; */
+}
+
+/* boat Storm Text */
+#stormText{
+    width: 100%;
+    background-color: black;
+    color: #ffffff;
+    text-align: center;
+    font-size: 18px;
+    padding: 1px;
+}
+#stormText>h1{
+    font-size: 55px;
+}#stormText>p{
+    margin: auto;
+    width: 86%;
+    margin-bottom: 30px;
+}
+
+/* Full-Touch 2.5D div */
+#curved{
+    width: 100%;
+    display: flex;
+}
+#curved>div{
+    width: 50%;
+    color: #ffffff;
+    padding-left: 80px;
+    padding-right: 80px;
+    text-align: justify;
+}
+#curved>div:first-child{
+    background-color: #ca1324;
+}
+#curved>div:last-child{
+    background-color: #252525;
+}
+#curved>div:first-child>img{
+    width: 350px;
+    height: 350px;
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+}
+#curved>div:last-child>img{
+    width: 450px;
+    height: 400px;
+    display: block;
+    margin: auto;
+}
+#curved>div:last-child>div>div{
+    width: 80%;
+    font-size: 18px;
+    margin-top: 70px;
+}
+#curved>div>div>p{
+    line-height: 22px;
+    font-size: 18px;
+}
+
+/* Keep Track Of Your SpO2 Level div */
+#level{
+    width: 100%;
+    background-color: #bb0f22;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #ffffff;
+}
+#level>img{
+    width: 550px;
+}
+#level>div{
+    width: 40%;
+    line-height: 22px;
+    font-size: 18px;
+}
+#level>div>h1{
+    font-size: 5vh;
+}
+
+/* specification */
+#specification{
+    width: 100%;
+    background-color: #760003;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#specification>div{
+    width: 35%;
+    background-color: black;
+    padding: 40px;
+    font-size: 20px;
+}
+#specification>img{
+    width: 500px;
+}
+.greytext{
+    color: #717171;
+}
+.whitetext{
+    color: #ffffff;
+}
+
+/* warranty */
+#warranty{
+    width: 100%;
+    display: flex;
+
+}
+#warranty>div:first-child{
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #262626;
+}
+#warranty>div:last-child{
+    width: 25%;
+    background-color: #3c3c3c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#warranty>div:first-child>img{
+    width: 550px;
+}
+#warranty>div:first-child>div{
+    width: 50%;
+}
+#warranty>div:first-child>div>h1{
+    font-size: 37px;
+    color: #ffffff;
+}
+#warranty>div:first-child>div>p{
+    font-size: 18px;
+    line-height: 22px;
+    color: #dddddd;
+}
+#warranty>div:last-child>img{
+    width: 100%;
+}
+
+/* faq */
+#faq{
+    width: 100%;
+}
+#faq>div{
+    width: 50%;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+#faq>div>div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    margin-top: 20px;
+}
+#faq>div>div>select{
+    border: 1px solid transparent;
+    width: 5%;
+    height: 5%;
+}
+#faq hr{
+    margin-top: 10px;
+}
+
+/* download manual */
+#download{
+    width: 100%;
+
+}
+#download>div{
+    background-color: #797777;
+    color: #f7ffff;
+    width: 15%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 8px;
+    padding: 15px 15px;
+}
+
+/* review */
+#review{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 70px;
+    font-size: 18px;
+}
+#review>div:last-child{
+    width: 10%;
+    height: 40px;
+    background-color: #ff0000;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* Product Sticky */
+#stickyProduct{
+    width: 100%;
+    height: 100px;
+    background-color: #f1f1f1;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    bottom:0;
+}
+#stickyProduct>div{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    margin: 0px;
+}
+#stickyProduct>div:first-child>img{
+    width: 100px;
+    box-sizing: border-box;
+}
+#stickyProduct>div:last-child{
+    width: 30%;
+}
+#stickyProduct>div:last-child>div{
+    border: 1px solid black;
+    margin: 0px;
+    margin-right: 30px;
+    padding: 19px 60px;
+    font-size: 20px;
+    border-radius: 5px;
+    
+}
+#stickyProduct>div:last-child>div>h4{
+    margin: 0px;
+}
+#stickyProduct>div:last-child>button{
+    border: 1px solid transparent;
+    padding: 20px 40px;
+    font-size: 20px;
+    background-color: #ff0000;
+    color: white;
+    border-radius: 5px;
+    margin: 0px;
+}
+
+/* animation */
+#curved{
+    height: 700px;
+}
+#curved>div:first-child>img{
+    animation: getSmall 2s ease forwards 1 ;
+}
+
+@keyframes getSmall{
+    0%{
+        width: 500px;
+        height: 500px;
+    }
+}
+
+#curved>div:last-child>img{
+    animation: getBigger 2s ease forwards 1;
+}
+
+@keyframes getBigger{
+    0%{
+        width:200px;
+        height: 200px;
+    }
+}
+#level{
+    height: 570px;
+}
+#level>img{
+    animation: moreSmall 2s ease forwards 1;
+    /* overflow: hidden; */
+}
+
+@keyframes moreSmall{
+    0%{
+        width: 650px;
+    }
+}
+
+#specification{
+    height: 700px;
+}
+/* #specification>div{
+    animation: travel 1s ease forwards 1;
+}
+
+@keyframes travel{
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateY(5%);
+    }
+} */
+
+#specification>img{
+    position: relative;
+    animation: getmoreBig 2s ease forwards 1;
+}
+
+@keyframes getmoreBig{
+    0%{
+        width: 200px;
+    }
+}
+#warranty>div{
+    height: 450px;
+}
+#warranty>div:first-child>img{
+    animation: warrantyImage 3s ease-out forwards 1;
+}
+
+@keyframes warrantyImage{
+    100%{
+        width: 450px;
+    }
+}
+
+#warranty>div:last-child>img{
+    animation: warrantySecImg 2s ease-out forwards 1;
+}
+
+@keyframes warrantySecImg{
+    100%{
+        width: 90%;
+    }
+}
+
+
+
+/* #stormText>h1{
+    animation: travelUp 2s ease forwards 1;
+}
+#stormText>p{
+    animation: travelUp 2s ease forwards 1;
+}
+
+@keyframes travelUp{
+    0%{
+        transform: translateY(100%);
+    }
+} */

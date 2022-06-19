@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOAT-LOGIN</title>
+    <script src="https://kit.fontawesome.com/8697db6a09.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="blogin1.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="cartpop.css">
+    <link rel="stylesheet" href="shipment.css">
+    <link rel="stylesheet" href="payment.css">
+</head>
+
+<body>
+ <!-- NAVBAR HTML STARTS HERE -->
+ <div id="banner">Big savings on your favourite boAt products. Grab now!</div>
+ <div id="navbar">
+     <div>
+         <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Boat-Logo_200x_200x_f9c79bf9-9c9a-477d-ab6a-7c889a1f2f70_170x.png?v=1646731229"
+             alt="" id="logoboat">
+     </div>
+     <div id="navigators">
+         <ul>
+             <li><a href="">Shop <small>v</small></a>
+                 <div id="submenu">
+
+                     <div class="col" id="nav_airdopes">
+                         <img
+                             src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/dropdown-TWS_540x.png?v=1612338251">
+                     </div>
+
+
+                     <div class="col" id="nav_wireless">
+                         <img
+                             src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/Rectangle271_540x.png?v=1612338387">
+                     </div>
+
+
+                     <div class="col" id="nav_smartwatch">
+                         <img
+                             src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/pro_gear_720x.jpg?v=1648546494">
+
+                     </div>
+
+
+                     <div class="col" id="nav_wired">
+                         <img
+                             src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/latest_background_b4f773ca-05d9-41cc-a7cf-3104993ae895_540x.png?v=1612338356">
+                     </div>
+
+
+                     <div class="col" id="nav_speakers">
+                         <img
+                             src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/box-5_480x.png?v=1612338436">
+
+                     </div>
+
+
+                     <div class="col" id="nav_homeaudio">
+                         <img
+                             src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/Collections_5baef8f1-a67a-40a5-a537-4258c6caae6a_480x.png?v=1622452897">
+                     </div>
+
+
+                     <div class="col" id="nav_accessories">
+                         <img
+                             src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/bence-boros-253214-unsplash_480x.jpg?v=1648545875">
+
+                     </div>
+
+
+                     <div class="col" id="nav_trebel">
+                         <img
+                             src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/New-Category-Banners_with-Trebal_09_480x.png?v=1615033153">
+
+                     </div>
+
+
+                     <div class="col" id="nav_limited">
+                         <img
+                             src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/dropdown-limited-edition_480x.png?v=1612338560">
+
+                     </div>
+
+
+                     <div class="col" id="nav_grooming">
+                         <img
+                             src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/MISFIT-shop_480x.png?v=1624859990">
+
+                     </div>
+
+
+                     <div class="col" id="nav_gaming">
+                         <img
+                             src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/Immortal_category_Image_480x.png?v=1626094103">
+
+                     </div>
+
+
+                 </div>
+             </li>
+             <li><a href="dcpage.html">boAt | DC</a></li>
+             <li><a href="offerzone.html">Offer Zone</a></li>
+             <li><a href="">More <small>v</small></a>
+                 <div id="submenu_more">
+                     <p>Daily Deals</p>
+                     <p>Gifting</p>
+                     <p>Do What Floats Your boAt</p>
+                     <p>Meet The boAtheads</p>
+                     <p>Corporate Orders</p>
+                     <p>Earn Rs.100</p>
+                     <p>Careers</p>
+                 </div>
+             </li>
+         </ul>
+     </div>
+     <div id="search_sec">
+
+         <input type="text" placeholder=" Search..." id="searchbar" onkeyup="search_category()">
+         <div>
+             <div class="smallicon" id="proicon">
+                 <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/navigation-Icon4.png?v=1655206048"
+                     alt="">
+             </div>
+
+
+             <div class="smallicon">
+                 <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/gift.png?v=1606314809" alt="">
+             </div>
+             <div class="smallicon" id="navcartpop">
+                 <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/navigation-Icon-3.png?v=1655206047"
+                     alt="">
+             </div>
+         </div>
+
+     </div>
+ </div>
+ <div id="profilepop">
+
+
+ </div>
+ <!-- pop up -->
+ <div id="cartPop">
+     <div id="cartContainer">
+         <div id="cartHeader">
+             <div>
+                 <h3>Your Cart(Cart)</h3>
+                 <span id="closeBtn">&times;</span>
+             </div>
+         </div>
+         <div id="freeDelivery">
+             <p>Free Shipping sitewide | <b>Cash On Delivery</b> available for order value upto <b>₹3000</b></p>
+         </div>
+         <div id="cart">
+             <div>
+                 <p>Your cart is empty</p>
+                 <button>Start Shopping</button>
+             </div>
+         </div>
+     </div>
+ </div>
+
+ <!-- payment pop up -->
+ <div id="popUp">
+     <div id="popUpContent">
+         <div>
+             <p id="closeBtnPay">&times;</p>
+         </div>
+         <div id="content">
+             <div id="logo">
+                 <img src="https://cdn.gokwik.co/merchant/155/logo1632914610996.jpeg" alt="">
+             </div>
+             <div id="mobile">
+                 <div>
+                     <h4><span class="circle">&#9312;</span>Address</h4>
+                     <h4><span class="circle">&#9313;</span>Pay</h4>
+                     <h4><span class="circle">&#9314;</span>Mobile</h4>
+                 </div>
+                 <hr>
+             </div>
+             <div id="input">
+                 <div>
+                     <h3>Enter Mobile Number</h3>
+                     <div>
+                         <span>&nbsp;&nbsp;+91 </span>
+                         <input id="mblNumber" type="number" placeholder="Enter Number">
+                     </div>
+                     <div id="notify">
+                         <input type="checkbox">
+                         <span>Notify me for orders, updates & offers</span>
+                     </div>
+                 </div>
+             </div>
+             <div id="input2">
+                 <div>
+                     <p>Shipping Address</p>
+
+                     <div>
+                         <input type="radio" value="" checked>
+                         </p>
+                         <div>
+                             <div
+                                 style="display: flex;justify-content: space-between;width: 100%;align-items: center;height: 25px;">
+                                 <p id="payName" style="font-size: 22px;">name</p><button
+                                     style="padding:4px 9px; background-color: black;line-height: 12px;border-radius:15px;color:white;">Home</button>
+                             </div>
+                             <p style="line-height:20px;font-size: 16px;margin-top: 3px; ">
+                                 871 Bellueve Street Santa Ana, CA 92707
+                             </p>
+                             <img style="float: right;" src="https://pdp.gokwik.co/assets/icons/edit.svg" alt="">
+                         </div>
+                     </div>
+
+                 </div>
+                 <div style="display: flex;gap: 5px;align-items: center;">
+                     <p style="font-size: 17px;color:#656566">Shipping Method</p><input
+                         style="accent-color: black;font-weight: bold;" type="radio" name="aafa" checked>Free
+                     Shipping @ ₹ 0
+                 </div>
+                 <div style="display: flex;align-items: center;gap: 10px;"><span
+                         style="font-size: 25px;font-weight:bold;border: 2px solid black;padding: 4px 10px 4px 10px;border-radius: 100%;">
+                         + </span>
+                     <p>Add new Address</p>
+                 </div>
+             </div>
+             <div id="input3">
+                 <div>
+                     <div>
+                         <p>Please select payment method to complete the order</p>
+                         <p>Additional 5% discount upto ₹15 on UPI</p>
+                         <div id="viaupi">
+                             <div>
+                                 <p id="paymentpayupi1" style="text-align: left;">₹783</p>
+                                 <p>Pay Via UPI</p>
+                             </div>
+                             <div><img src="https://pdp.gokwik.co/assets/icons/pay-with-upi.svg" alt=""> <span
+                                     style="color: white;">&nbsp;&nbsp;&sc;&nbsp;</span> </div>
+                         </div>
+                     </div>
+                     <div>
+                         <div>
+                             <div>
+                                 <p id="paymentpayupi2">₹783</p>
+                                 <p>Cash On Delivery</p>
+                             </div>
+                             <div><img src="https://pdp.gokwik.co/assets/icons/cod.svg" alt=""> <span
+                                     style="color: white;">&nbsp;&nbsp;&sc;&nbsp;</span>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+             <div id="verifyOtp">
+                 <h3>Verify Mobile Number</h3>
+                 <p>Enter the otp recieved on</p>
+                 <p id="verifymblNumber">+91- 1234567890 <img src="https://pdp.gokwik.co/assets/icons/edit.svg"
+                         alt=""></p>
+                 <div class="inp">
+                     <input type="text" id="ist" maxlength="1" onkeyup="clickEvent(this,'sec')">
+                     <input type="text" id="sec" maxlength="1" onkeyup="clickEvent(this,'third')">
+                     <input type="text" id="third" maxlength="1" onkeyup="clickEvent(this,'fourth')">
+                     <input type="text" id="fourth" maxlength="1" onkeyup="clickEvent(this,'fifth')">
+
+                 </div>
+             </div>
+
+             <div id="continueBtn">
+                 <button>Continue &#10230;</button>
+             </div>
+             <div id="popFooter">
+                 <div>
+                     <p>T&C | Privacy | c969ba5b</p>
+                 </div>
+                 <div>
+                     <span>Powered By</span>
+                     <img src="https://pdp.gokwik.co/assets/icons/footer-logo.svg" alt="">
+                 </div>
+             </div>
+         </div>
+         <div id="finalCart">
+             <!--main summary div -->
+             <div id="orderSummary">
+                 <div><img src="https://pdp.gokwik.co/assets/icons/cart.svg" alt="">&nbsp;&nbsp;
+                     <p>Order Summary</p>
+                 </div>
+                 <div id="productFinal">
+                     <!-- append data here -->
+                 </div>
+                 <div id="summary">
+                     <div>
+                         <p>SubTotal</p>
+                         <p id="subtotal">00</p>
+                     </div>
+                     <div>
+                         <p>Coupon Discount</p>
+                         <p id="coupanCode">00</p>
+                     </div>
+                     <div>
+                         <p>Prepaid Discount</p>
+                         <p id="PrepaidDiscount">00</p>
+                     </div>
+                     <div>
+                         <p>Shipping</p>
+                         <p>Free</p>
+                     </div>
+                     <br>
+                     <hr>
+                     <div>
+                         <p>To Pay</p>
+                         <p id="Total">00</p>
+                     </div>
+                 </div>
+
+             </div>
+             <!-- coupan discount part -->
+             <div id="applyCoupan">
+                 <img src="https://pdp.gokwik.co/assets/icons/coupon-discount.svg" alt="">
+                 &nbsp;&nbsp;&nbsp;
+                 <input id="inputDiscount" type="text"
+                     style="background-color: #e2ebf9;border:1px dashed;border-radius: 10px;padding: 10px; outline: none;"
+                     placeholder="Discount Code">
+             </div>
+         </div>
+     </div>
+ </div>
+
+ <!-- NAVBAR HTML OVER^^^^^ -->
+
+
+    <div id="log">Login</div>
+    <p>Please enter your email and password:</p>
+    <!-- <div id="logicons">
+        <div><a
+                href="https://www.facebook.com/login.php?skip_api_login=1&api_key=1896981220538415&kid_directed_site=0&app_id=1896981220538415&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fv3.2%2Fdialog%2Foauth%3Fclient_id%3D1896981220538415%26state%3De749c27635991038e221512d189a7e0e%26response_type%3Dcode%26sdk%3Dphp-sdk-5.4.4%26redirect_uri%3Dhttps%253A%252F%252Fsocial-login.oxiapps.com%252Fauth%252Ffacebook%26scope%3Demail%26display%3Dpopup%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3D3cf5dc84-4202-4335-8994-9d8cdc70a1d9%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fsocial-login.oxiapps.com%2Fauth%2Ffacebook%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3De749c27635991038e221512d189a7e0e%23_%3D_&display=popup&locale=hi_IN&pl_dbl=0"><img
+                    id="fb" src="https://1000logos.net/wp-content/uploads/2021/04/Facebook-logo-768x480.png"></a></div>
+        <div><a
+                href="https://accounts.google.com/o/oauth2/auth/oauthchooseaccount?response_type=code&redirect_uri=https%3A%2F%2Fsocial-login.oxiapps.com%2Fauth%2Fgoogle&client_id=898543883992-ut65aoh5alu6s7jlcs5hk05htbagjs9n.apps.googleusercontent.com&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&access_type=online&approval_prompt=auto&flowName=GeneralOAuthFlow"><img
+                    class="google"
+                    src="data:image/png;base64,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"></a>
+        </div>
+    </div> -->
+    <div id="form">
+        <form>
+            <input id="email" type="text" placeholder="E-mail" /><br>
+            <div id="fp"><input id="password" type="password" placeholder="Password" /><br><a href="">
+                    <p>Forgot Password</p>
+                </a></div>
+            <button id="submit1" type="submit">LOGIN</button>
+            <p>New Customer?&nbsp;&nbsp;<a href="bsignup1.html">Create an account</a></p>
+        </form>
+    </div>
+    <!-- boat footer start here -->
+
+
+    <!-- Footer section  -->
+    <!-- middleText starts -->
+    <div id="middleText">
+        <p>India's fastest growing audio & wearables brand. The most incredible range of wireless earphones,
+            earbuds,
+            headphones, smart watches, and home audio. From workouts to adventures, boAt will get you
+            sailing!</p>
+    </div>
+    <!-- footer part starts here -->
+    <footer>
+        <!-- top part of footer  -->
+        <div id="topPart">
+            <!-- Ist div -->
+            <div><img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Boat-Logo_200x.png?v=1600753267"
+                    alt="BoatLogo">
+                <p>Subscribe to email alerts. We promise not to spam your inbox.</p>
+                <div id="emailIn"><input type="email" placeholder="Enter Email"><button>Subscribe</button>
+                </div>
+                <!-- icons part -->
+                <div id="icons">
+                    <a href="https://www.facebook.com/boat.nirvana/">
+                        <div><i class="fa-brands fa-facebook-f"></i></div>
+                    </a>
+                    <a href="https://twitter.com/RockWithboAt">
+                        <div><i class="fa-brands fa-twitter"></i></div>
+                    </a>
+                    <a href="https://www.instagram.com/boat.nirvana/">
+                        <div><i class="fa-brands fa-instagram"></i></div>
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCY3JXaO_v8H3E6hTYUp5qWQ">
+                        <div><i class="fa-brands fa-youtube"></i></div>
+                    </a>
+                    <a href="https://www.linkedin.com/company/boat-lifestyle/">
+                        <div><i class="fa-brands fa-linkedin"></i></div>
+                    </a>
+                </div>
+            </div>
+            <!-- second div -->
+            <div>
+                <p>SHOP</p>
+                <div>
+                    <p>True Wireless Earbuds</p>
+                    <p>Wireless Headphones</p>
+                    <p>Wired Headphones</p>
+                    <p>Wireless Speakers</p>
+                    <p>Home Audio</li>
+                    <p>Mobile Accessories</p>
+                    <p>Smart Watches</p>
+                    <p>TRebel</p>
+                    <p>Misfit</p>
+                    <p>Gift Cards</li>
+                    <p>Rock In India</p>
+                    <p>Earn Rs.100</p>
+                </div>
+            </div>
+            <div>
+                <p>HELP</p>
+                <div>
+                    <p>Track Your Orders</p>
+                    <p>Warranty & Support</p>
+                    <p>Return Policy</p>
+                    <p>Service Centers</p>
+                    <p>Bulk Order</p>
+                    <p>FAQ's</p>
+                    <p>Why Buy Direct</p>
+                </div>
+            </div>
+            <div>
+                <p>COMPANY</p>
+                <div>
+                    <p>About Us</p>
+                    <p>News</p>
+                    <p>Read Our Blog</p>
+                    <p>Carriers</p>
+                    <p>Security</p>
+                    <p>Terms Of Services</p>
+                    <p>Privacy Policy</p>
+                    <p>Investors Relations</p>
+                </div>
+            </div>
+        </div>
+        <!-- bottom part of footer -->
+        <div id="bottomPart">
+            <div><img
+                    src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Fotter_payment_icn_2_900x_aff68517-98f4-4a82-9aee-2405cea66251_350x.png?v=1650262054"
+                    alt=""></div>
+            <div>
+                <h2>DOWNLOAD THE APP</h2>
+                <a href="https://play.google.com/store/apps/details?id=boatlifestylein.android.app"><img
+                        src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/google-play.png?v=1608620293"
+                        alt="google Play logo"></a>
+                <a href="https://apps.apple.com/us/app/id1521646593"><img
+                        src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/app-store.png?v=1608620293"
+                        alt="apple store logo"></a>
+            </div>
+        </div>
+        <p>© 2022 Imagine Marketing Limited. All Rights Reserved.</p>
+    </footer>
+
+</body>
+<script src="navbar.js"></script>
+<script src="blogin1.js"></script>
+
+
+</html>

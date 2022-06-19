@@ -550,16 +550,14 @@ body{
 /* Product Sticky */
 #stickyProduct{
     width: 100%;
-    height: 5%;
+    height: 70px;
     background-color: #f1f1f1;
     padding: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
-    /* position: sticky;
-    top: 600;
-    z-index: 1; */
+    position: sticky;
+    bottom:0;
 }
 #stickyProduct>div{
     width: 30%;

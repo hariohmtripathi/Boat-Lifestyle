@@ -92,6 +92,16 @@ function displayPay(arr){
 let subtotale = document.querySelector("#subtotal");
 subtotale.innerText = "Rs. " + sumu;
 
+// let saveNamePayment= JSON.parse(localStorage.getItem("loggedin"));
+// let paymentName= document.getElementById("payName");
+// paymentName.innerText= saveNamePayment[0];
+
+let paymentProductPrice1= document.getElementById("paymentpayupi1");
+let paymentProductPrice2= document.getElementById("paymentpayupi2");
+paymentProductPrice1.innerText="Rs. " + sumu;
+paymentProductPrice2.innerText= "Rs. " + sumu;
+
+
 let discountVal = document.querySelector("#coupanCode");
     let totalPay=document.querySelector("#Total");
     totalPay.innerText= "Rs. " + (sumu).toFixed(2);
@@ -100,11 +110,17 @@ let discountVal = document.querySelector("#coupanCode");
         if(event.key==="Enter"){
             let code = document.querySelector("#inputDiscount").value;
             if(code == "atrangi"){
-                discountVal.innerText = (sumu*0.3).toFixed(2);
-                totalPay.innerText= (sumu- (sumu*0.3)).toFixed(2);
+                discountVal.innerText ="Rs. "  +  (sumu*0.3).toFixed(2);
+                totalPay.innerText= "Rs. "  + (sumu- (sumu*0.3)).toFixed(2);
+                
+paymentProductPrice1.innerText="Rs. "  + (sumu- (sumu*0.3)).toFixed(2);
+paymentProductPrice2.innerText="Rs. "  + (sumu- (sumu*0.3)).toFixed(2);
             }else if (code == "hawabazi"){
-                discountVal.innerText = sumu*0.5;
-                totalPay.innerText= sumu- (sumu*0.5);
+                discountVal.innerText = "Rs. " + (sumu*0.5).toFixed(2);
+                totalPay.innerText= "Rs. " + (sumu- (sumu*0.5)).toFixed(2);
+               
+paymentProductPrice1.innerText="Rs. " + (sumu- (sumu*0.5)).toFixed(2);
+paymentProductPrice2.innerText= "Rs. "  + (sumu- (sumu*0.5)).toFixed(2);
             } else{
                 alert("Jeb me piasa hai nahi toh aya kyun idhar!")
             };

@@ -1,7 +1,14 @@
+html{
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+        
+}
+
 body{
     padding: 0px;
     margin: 0px;
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 
@@ -13,7 +20,7 @@ body{
 #topOne>div{
     width: 98%;
     background-color: red;
-    padding: 3px;
+    padding: 18px;
     margin: auto;
     text-align: center;
     color: white;
@@ -46,99 +53,20 @@ body{
     color: black;
 }
 /* pop up */
-#cartPop{
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgb(0, 0, 0, 0.3);
-    display: none;
-    z-index: 1;
-    
-    /* opacity: .1; */
-}
-#cartContainer{
-    width: 30%;
-    background-color: white;
-    opacity: 1;
-    margin-left: 70%;
-    animation: slideIn 1s ease-out forwards 1;
-}
-@keyframes slideIn{
-    0%{
-        transform: translateX(10%);
-    }
-}
-#cartHeader{
-    width: 100%;
-    background-color: #ff0000;
-    color: white;
-    /* padding: 10px; */
-}
-#cartHeader>div{
-    width: 90%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px 5px;
-    margin: -8px auto;
-}
-#cartHeader>div>p{
-    margin: 0px;
-}
-#cartHeader>div>span{
-    margin: 0px;
-}
-#closeBtn{
-    border: 2px solid white;
-    font-size: 40px;
-}
-#freeDelivery{
-    background-color: black;
-    color: white;
-    padding-block-end: 10px;
-    font-size: 16px;;
-}
-#freeDelivery>p{
-    margin: 0px 8px;
-}
-#cart{
-    height: 700px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-#cart>div{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-#cart>div>p{
-    font-size: 18px;
-    color: gray;
-}
-#cart>div>button{
-    border: 1px solid transparent;
-    font-size: 22px;
-    padding: 15px 30px;
-    background-color: #ff0000;
-    color: white;
-    border-radius: 3px;
-}
+
 /* product and its rating part */
 #description{
     width: 100%;
 }
 #description>div{
-    width: 94%;
+    width: 96%;
     margin: auto;
     display: flex;
     justify-content: flex-start;
     padding: 45px;
     background-color: #f5f5f5;
-    margin-top:-12px
+    margin-top:-12px;
+    /* box-sizing: border-box; */
 }
 #description>div>div{
     margin-right: 25px;
@@ -154,7 +82,7 @@ body{
 }
 #smallImages>div>img{
     width: 100%;
-    height: 60px;
+    height: 70px;
     cursor: pointer;
     opacity: 1;
 }
@@ -169,7 +97,7 @@ body{
 }
 #bigImage>img{
     width: 100%;
-    height: 450px;
+    height: 470px;
 }
 
 #productTitle{
@@ -191,10 +119,11 @@ body{
 #title>p{
     margin: 0px;
     color: gray;
+    line-height: 18px;
 }
 #productTitle>hr{
     width: 100%;
-    margin-top: -6px;
+    margin-top: 6px;
     background-color: gray;
 }
 #rating{
@@ -204,7 +133,7 @@ body{
     align-items: center;
     font-size: 18px;
     text-align: center;
-    margin-top: -10px;
+    margin-top: 10px;
 }
 #rating>span{
     margin-left: 1px;
@@ -212,6 +141,17 @@ body{
 }
 #rating>p{
     margin-left: 1px;
+}
+#rating>div{
+    width: 20px;
+    height: 20px;
+    background-color: #f5f5f5;
+    margin-left: 5px;
+}
+#rating>div>img{
+    width: 100%;
+    height: 100%;
+    background-color: #f5f5f5;
 }
 
 #stars{
@@ -225,7 +165,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: -10px;
+    margin-top: 10px;
 }
 #image_select>div:first-child{
     display: flex;
@@ -242,6 +182,7 @@ body{
     background-color:#f5f5f5;
 }
 #zest{
+    border: 1px dashed gray;
     background-color: #e1e1e1;
     border-radius: 10px;
     display: flex;
@@ -252,6 +193,7 @@ body{
 }
 #zest>div{
     display:flex;
+    align-items: center;
 }#zest img{
     width: 100px;
     height: 50px;
@@ -321,6 +263,7 @@ body{
     justify-content: space-around;
     align-items: center;
     margin-top: 12px;
+    margin-bottom: 12px;
 }
 #increase{
     width: 50%;
@@ -381,11 +324,9 @@ body{
     display: flex;
     justify-content: space-around;
     color: #b2b2b2;
-    /* overflow-y: scroll;
-    scroll-behavior: smooth;
-    scroll-snap-type: y mandatory; */
     
 }
+
 #textLink>div>h3:first-child{
     color: red;
 }
@@ -475,7 +416,7 @@ body{
     font-size: 18px;
 }
 #level>div>h1{
-    font-size: 37px;
+    font-size: 5vh;
 }
 
 /* specification */
@@ -485,13 +426,11 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    /* scroll-snap-align: center; */
 }
 #specification>div{
     width: 35%;
     background-color: black;
     padding: 40px;
-    
     font-size: 20px;
 }
 #specification>img{
@@ -546,6 +485,7 @@ body{
 /* faq */
 #faq{
     width: 100%;
+    
 }
 #faq>div{
     width: 50%;
@@ -577,7 +517,7 @@ body{
 #download>div{
     background-color: #797777;
     color: #f7ffff;
-    width: 13%;
+    width: 15%;
     margin: auto;
     display: flex;
     align-items: center;
@@ -595,7 +535,6 @@ body{
     align-items: center;
     margin-top: 70px;
     font-size: 18px;
-    /* scroll-snap-align: center; */
 }
 #review>div:last-child{
     width: 10%;
@@ -606,6 +545,54 @@ body{
     align-items: center;
     justify-content: center;
 
+}
+
+/* Product Sticky */
+#stickyProduct{
+    width: 100%;
+    height: 5%;
+    background-color: #f1f1f1;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    /* position: sticky;
+    top: 600;
+    z-index: 1; */
+}
+#stickyProduct>div{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    margin: 0px;
+}
+#stickyProduct>div:first-child>img{
+    width: 100px;
+}
+#stickyProduct>div:last-child{
+    width: 30%;
+}
+#stickyProduct>div:last-child>div{
+    border: 1px solid black;
+    margin: 0px;
+    margin-right: 30px;
+    padding: 19px 60px;
+    font-size: 20px;
+    border-radius: 5px;
+    
+}
+#stickyProduct>div:last-child>div>h4{
+    margin: 0px;
+}
+#stickyProduct>div:last-child>button{
+    border: 1px solid transparent;
+    padding: 20px 40px;
+    font-size: 20px;
+    background-color: #ff0000;
+    color: white;
+    border-radius: 5px;
+    margin: 0px;
 }
 
 /* animation */

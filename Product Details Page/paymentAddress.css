@@ -1,0 +1,50 @@
+#input2 {
+    width: 100%;
+    /* height: 10vh; */
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    /* display: block; */
+    /* z-index: 2; */
+    position: relative;
+    visibility: visible;
+}
+
+#input2>div {
+    /* border: 1px solid red; */
+    width: 95%;
+    padding-left: 30px;
+}
+
+#input2>div>div {
+    border: 1px solid rgb(221, 221, 221);
+    width: 80%;
+    gap: 5px;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    text-align: start;
+}
+
+#input2>div>div>input {
+    margin-top: 10px;
+    accent-color: black;
+}
+
+#input2>div>div>div {
+    /* border: 1px solid rebeccapurple; */
+    width: 100%;
+}
+
+#input2>div p {
+    font-size: 18px;
+    line-height: 15px;
+
+}
+
+#input2>div>div+div>input {
+    background-color: black;
+}

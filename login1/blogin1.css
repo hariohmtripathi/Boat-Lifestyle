@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+body{
+    background-color: #252525;
+    box-sizing: border-box;
+}
+#banner{
+        width: 100%;
+        height: 30px;
+        line-height: 30px;
+        margin-top: 0px;
+        text-align: center;
+        background-color: red;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        color: white;
+    }
+    #log{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        margin: auto;
+        text-align: center;
+        font-size: 48px;
+        color: white;
+    }
+    p{
+        color: white;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+    }
+   #form{
+    margin: auto;
+    width: 90%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    /* display: flex;
+    border: 1px solid white;
+    justify-content: center;
+    align-items: center; */
+   }
+   button{
+    background-color: red;
+    color: white;
+    border-radius: 8px;
+    height: 40px;
+    border: none;
+
+   }
+   #form>form{
+    width:35%;
+
+
+   }
+   form>input {
+     justify-content: center;
+     align-items: center;
+     width: 97%;
+     height: 46px;
+     background-color: transparent;
+     border: 1px solid gray;
+     padding-left: 10px;
+     border-radius: 5px;
+     margin-bottom: 20px;
+     color:white;
+     margin: auto;
+   }
+   form>div>input{
+    justify-content: center;
+     align-items: center;
+     width: 100%;
+     height: 40px;
+     background-color: transparent;
+     border: 1px solid wheat;
+     padding-left: 10px;
+     border-radius: 5px;
+     margin-bottom: 20px;
+     width: 97%;
+   }
+   form>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+   }
+   #fp{
+    width: 100%;
+    border: 1px solid grey;
+    margin:15px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    padding-top: 4px;
+    border-radius: 5px;
+   }
+   #fp>input{
+    width: 69%;
+    margin-top: 18px;
+    margin-right: 20px;
+    border: none;
+    outline: none;
+    color: wheat;
+    background-color: transparent;
+   }
+   #fp>a{
+    width: 70%;
+    font-size: 15px;
+    margin-right: 8px;
+    margin-left: 0px;
+   }
+   #submit1{
+    margin: auto;
+    width: 100%;
+    height: 40px;
+   }
+   p>a{
+    margin-top: 20px;
+    color: white;
+   }
+   a:hover{
+    text-decoration: none;
+   }
+   #icons{
+    width: 10%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+   }
+   #icons>div{
+    /* background-color: white; */
+    font-size: 30px;
+    border-radius: 40px;
+    padding: 15px;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+   }
+   a{
+    color: white;
+   }
+   /* i{
+    background-color: blue;
+    color: white;
+   } */
+   /* #icons>div:last-child{
+    color: yellow;
+   } */
+   img{
+    display: flex;
+    width: 50px;
+    border-radius: 50%;
+   }
+  #fb{
+    width: 100px;
+  }
+  /* media queries for medium screen */
+  @media only screen and (min-width: 500px) and (max-width:930px) {
+    #form{
+    margin: auto;
+    width: 90%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    /* display: flex;
+    border: 1px solid white;
+    justify-content: center;
+    align-items: center; */
+   }
+   button{
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    height: 40px;
+    border: none;
+
+   }
+   #form>form{
+    width:60%;
+margin: auto;
+
+   }
+   form>input {
+     justify-content: center;
+     align-items: center;
+     width: 97%;
+     height: 30px;
+     background-color: transparent;
+     border: 1px solid gray;
+     padding-left: 8px;
+     border-radius: 5px;
+     margin-bottom: 20px;
+     color:white;
+     margin: auto;
+   }
+   /* form>div>input{
+    justify-content: center;
+     align-items: center;
+     width: 9%;
+     height: 30px;
+     background-color: transparent;
+     border: 1px solid grey;
+     padding-left: 10px;
+     border-radius: 5px;
+     margin-bottom: 20px;
+   } */
+   form>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin-right: 100px;
+   }
+   #fp{
+    width: 100%;
+    border: 1px solid grey;
+    margin:15px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    padding-top: 4px;
+    border-radius: 5px;
+   }
+   #fp>input{
+    width: 69%;
+    margin-top: 18px;
+    margin-right: 20px;
+    border: none;
+    outline: none;
+    color: wheat;
+    background-color: transparent;
+   }
+   #fp>a{
+    width: 50%;
+    font-size: 11px;
+    margin-right: 10px;
+    margin-left: 0px;
+
+   }
+   #submit1{
+    margin: auto;
+    width: 100%;
+    height: 30px;
+   }
+   p>a{
+    margin-top: 20px;
+    color: white;
+    font-size: 11px;
+   }
+   a:hover{
+    text-decoration: none;
+   }
+   #icons{
+    width: 25%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+   }
+   #icons>div{
+    /* background-color: white; */
+    font-size: 30px;
+    padding: 10px;
+    width: 25%;
+    display: flex;
+    /* justify-content: space-between; */
+    /* justify-content: center; */
+    align-items: center;
+    color: white;
+    margin: auto;
+   }
+   a{
+    color: white;
+   }
+   img{
+    display: flex;
+    width: 59%;
+    border-radius: 50%;
+   }
+  #fb{
+    width: 110%;
+  }
+    }
+    /* media queries for small screen */
+    @media only screen and (min-width: 0px) and (max-width: 499px) {
+        #form{
+    margin: auto;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    display: flex;
+   padding-left: 10%;
+   }
+   button{
+    background-color: red;
+    color: white;
+    border-radius: 1px;
+    height: 20px;
+    border: none;
+
+   }
+   #form>form{
+    width:90%;
+margin: auto;
+margin-right: 20%;
+   }
+   form>input {
+     justify-content: center;
+     align-items: center;
+     width: 98%;
+     height: 30px;
+     background-color: transparent;
+     border: 1px solid gray;
+     padding-left: 8px;
+     border-radius: 5px;
+     margin-bottom: 15px;
+     color:white;
+     margin: auto;
+   }
+   form>div>input{
+    justify-content: center;
+     align-items: center;
+     width: 100%;
+     height: 30px;
+     background-color: transparent;
+     border: 1px solid grey;
+     padding-left: 10px;
+     border-radius: 5px;
+     margin-bottom: 20px;
+     width: 97%;
+   }
+   form>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin-right: 80px;
+   }
+   #fp{
+    width: 100%;
+    border: 1px solid grey;
+    margin:15px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    padding-top: 4px;
+    border-radius: 5px;
+   }
+   #fp>input{
+    width: 69%;
+    margin-top: 18px;
+    margin-right: 20px;
+    border: none;
+    outline: none;
+    color: wheat;
+    background-color: transparent;
+   }
+   #fp>a{
+    width: 50%;
+    font-size: 11px;
+    margin-right: 10px;
+    margin-left: 0px;
+
+   }
+   #submit1{
+    margin: auto;
+    width: 100%;
+    height: 30px;
+   }
+   p>a{
+    margin-top: 20px;
+    color: white;
+    font-size: 10px;
+   }
+   a:hover{
+    text-decoration: none;
+   }
+   #icons{
+    width: 25%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+   }
+   #icons>div{
+    /* background-color: white; */
+    font-size: 20px;
+    padding: 10px;
+    width: 25%;
+    display: flex;
+    /* justify-content: space-between; */
+    /* justify-content: center; */
+    align-items: center;
+    color: white;
+    margin: auto;
+   }
+   a{
+    color: white;
+   }
+   img{
+    display: flex;
+    width: 59%;
+    border-radius: 50%;
+   }
+  #fb{
+    width: 110%;
+  }
+    }

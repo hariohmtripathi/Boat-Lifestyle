@@ -6,15 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="products.css">
     <link rel="stylesheet" href="cartpop.css">
+    <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="payment.css">
     <link rel="stylesheet" href="shipment.css">
-    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="offerzone.css">
     <script src="https://kit.fontawesome.com/8697db6a09.js" crossorigin="anonymous"></script>
-
 </head>
-
 
 <body>
     <!-- NAVBAR HTML STARTS HERE -->
@@ -28,6 +26,7 @@
             <ul>
                 <li><a href="">Shop <small>v</small></a>
                     <div id="submenu">
+
                         <div class="col" id="nav_airdopes">
                             <img
                                 src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/dropdown-TWS_540x.png?v=1612338251">
@@ -126,6 +125,8 @@
                     <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/navigation-Icon4.png?v=1655206048"
                         alt="">
                 </div>
+
+
                 <div class="smallicon">
                     <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/gift.png?v=1606314809" alt="">
                 </div>
@@ -256,8 +257,7 @@
                     <h3>Verify Mobile Number</h3>
                     <p>Enter the otp recieved on</p>
                     <p id="verifymblNumber">+91- 1234567890 <img src="https://pdp.gokwik.co/assets/icons/edit.svg"
-                            alt="">
-                    </p>
+                            alt=""></p>
                     <div class="inp">
                         <input type="text" id="ist" maxlength="1" onkeyup="clickEvent(this,'sec')">
                         <input type="text" id="sec" maxlength="1" onkeyup="clickEvent(this,'third')">
@@ -328,9 +328,55 @@
     </div>
 
     <!-- NAVBAR HTML OVER^^^^^ -->
-    <div id="cat_image">
-        <img src="" alt="">
+    <!-- div banner started -->
+    <div id="offerzoneimg">
+        <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/offer-page_strip_Web.jpg?v=1634206843" alt="">
     </div>
+    <!-- casheback div -->
+    <div id="cashback">
+        <div>
+            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/zest-Logo.jpg?v=1652950755" alt="">
+            <div>
+                <p>Flat 10% cashback upto 500 INR</p>
+                <br>
+
+                <p>Validity</p>
+                <p>31st June 2022</p>
+            </div>
+            <button>
+                Terms & Conditions
+            </button>
+        </div>
+        <div>
+            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Walnut369_Logo-Reverse_forLightBG_PDF_4x_aafc5a96-b7c9-423a-b640-8102adf490ac.jpg?v=1652949559"
+                alt="">
+            <div>
+                <p>Get a cashback of 20% up to ₹500 with Walnut 369</p>
+                <br>
+                <p>Validity</p>
+                <p>16th June 2022</p>
+            </div>
+            <button>
+                Terms & Conditions
+            </button>
+        </div>
+        <div>
+            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Ola_money.jpg?v=1649227976" alt="">
+            <div>
+                <p>Flat 10% cashback on transaction up to ₹750 INR</p>
+                <br>
+
+                <p>Validity</p>
+                <p>30th June 2022</p>
+            </div>
+            <button>
+                Terms & Conditions
+            </button>
+        </div>
+
+    </div>
+    <!-- cashback ended here -->
+    <!-- product section -->
     <div id="container">
         <h1 id="cat_title"></h1>
         <div id="filterAndSort">
@@ -354,7 +400,6 @@
         <div id="products">
             <!-- append products here -->
         </div>
-    </div>
     </div>
     <!-- Footer section  -->
     <!-- middleText starts -->
@@ -458,5 +503,5 @@
 </body>
 
 </html>
-<script src="productpagenavbar.js"></script>
-<script src="products.js"></script>
+<script src="offerzone.js"></script>
+<script src="navbar.js"></script>

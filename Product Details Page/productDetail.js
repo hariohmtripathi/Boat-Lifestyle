@@ -1,20 +1,19 @@
 // pop up
-let clickNav= document.getElementById("navbar");
-clickNav.addEventListener("click",openPop);
 
-let cartPop= document.getElementById("cartPop");
 
-function openPop(event){
-cartPop.style.display="block";
-let cart= JSON.parse(localStorage.getItem("addToCart"));
-displayCart(cart);
-}
+// let cartPop= document.getElementById("cartPop");
 
-let close= document.getElementById("closeBtn");
-close.addEventListener("click",closePop)
-function closePop(event){
-    cartPop.style.display="none";
-}
+// function openPop(event){
+// cartPop.style.display="block";
+// let cart= JSON.parse(localStorage.getItem("addToCart"));
+// displayCart(cart);
+// }
+
+// let close= document.getElementById("closeBtn");
+// close.addEventListener("click",closePop)
+// function closePop(event){
+//     cartPop.style.display="none";
+// }
 
 window.addEventListener("click",outsideClick);
 
@@ -63,6 +62,14 @@ function display(arr){
 
     let strikePrice= document.querySelector("#price>h2>strike");
     strikePrice.innerText= "₹ "+arr[0].main_price;
+
+    let stickyimg= document.querySelector("#stickyProduct>div>img");
+    stickyimg.src= arr[0].colourimage2;
+    let stickyTitle= document.querySelector("#stickyProduct>div>p");
+    stickyTitle.innerText= arr[0].name;
+    let stickyPrice= document.querySelector("#stickyProduct>div>p+p");
+    stickyPrice.innerText= "₹ " + arr[0].price;
+
 
 }
 

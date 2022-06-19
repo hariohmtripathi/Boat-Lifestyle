@@ -5,20 +5,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>boAt Storm Smart Watch Online</title>
-    <link rel="stylesheet" href="navbar.css">
-    <link rel="stylesheet" href="productDetail.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="products.css">
     <link rel="stylesheet" href="cartpop.css">
-    <link rel="stylesheet" href="shipment.css">
     <link rel="stylesheet" href="payment.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
-    </style>
+    <link rel="stylesheet" href="shipment.css">
+    <link rel="stylesheet" href="navbar.css">
+    <script src="https://kit.fontawesome.com/8697db6a09.js" crossorigin="anonymous"></script>
+
 </head>
 
-<body style="background-color: white;">
+
+<body>
     <!-- NAVBAR HTML STARTS HERE -->
-    <div id="banner">Big savings on your favourite boAt products. Grab now!</div>
+    <div id="banner" style="height: 40px;">Big savings on your favourite boAt products. Grab now!</div>
     <div id="navbar">
         <div>
             <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Boat-Logo_200x_200x_f9c79bf9-9c9a-477d-ab6a-7c889a1f2f70_170x.png?v=1646731229"
@@ -28,7 +28,6 @@
             <ul>
                 <li><a href="">Shop <small>v</small></a>
                     <div id="submenu">
-
                         <div class="col" id="nav_airdopes">
                             <img
                                 src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/dropdown-TWS_540x.png?v=1612338251">
@@ -127,8 +126,6 @@
                     <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/navigation-Icon4.png?v=1655206048"
                         alt="">
                 </div>
-
-
                 <div class="smallicon">
                     <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/gift.png?v=1606314809" alt="">
                 </div>
@@ -259,7 +256,8 @@
                     <h3>Verify Mobile Number</h3>
                     <p>Enter the otp recieved on</p>
                     <p id="verifymblNumber">+91- 1234567890 <img src="https://pdp.gokwik.co/assets/icons/edit.svg"
-                            alt=""></p>
+                            alt="">
+                    </p>
                     <div class="inp">
                         <input type="text" id="ist" maxlength="1" onkeyup="clickEvent(this,'sec')">
                         <input type="text" id="sec" maxlength="1" onkeyup="clickEvent(this,'third')">
@@ -330,433 +328,34 @@
     </div>
 
     <!-- NAVBAR HTML OVER^^^^^ -->
-
-
-
-    <!-- navbar
-    <div id="navbar">
+    <div id="cat_image">
+        <img src="" alt="">
     </div>
-     -->
-    <!-- home and page link below navbar -->
-    <div id="home">
-        <div>
-            <p>Home / </p>
-            <p>boAt Storm</p>
+    <div id="container">
+        <h1 id="cat_title"></h1>
+        <div id="filterAndSort">
+            <!-- filter section -->
+            <select name="Show Filters" id="filter">Show Filters
+                <option value="all">Show Filter</option>
+                <option value="1kTo3k">Price,1k-3k</option>
+                <option value="3kTo5k">Price,3k-5k</option>
+                <option value="5kToAbove">Price,5k-Above</option>
+
+            </select>
+            <!-- sort section -->
+            <select name="Show Sort" id="sort">Sort
+                <option value="all">Sort By </option>
+                <option value="AZ">From A-Z</option>
+                <option value="ZA">From Z-A</option>
+                <option value="Low to High">Price,Low to High</option>
+                <option value="High to Low">Price,High to Low</option>
+            </select>
         </div>
-
-    </div>
-
-    <!-- pop up -->
-    <!-- <div id="cartPop">
-        <div id="cartContainer">
-            <div id="cartHeader">
-                <div>
-                    <h3>Your Cart(Cart)</h3>
-                    <span id="closeBtn">&times;</span>
-                </div>
-            </div>
-            <div id="freeDelivery">
-                <p>Free Shipping sitewide | <b>Cash On Delivery</b> available for order value upto <b>₹3000</b></p>
-            </div>
-            <div id="cart">
-                <div>
-                    <p>Your cart is empty</p>
-                    <button>Start Shopping</button>
-                </div>
-            </div>
-        </div>
-    </div> -->
-
-    <!-- payment pop up -->
-   
-
-    <!-- product and its rating part -->
-    <div id="description">
-        <div>
-            <div id="smallImages">
-                <div>
-                    <img onmouseover="changeImg(this)" ,
-                        src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/e7910a39-186a-41f6-ac57-fc3e84108104_600x.png?v=1625045106"
-                        alt="">
-                </div>
-                <div>
-                    <img onmouseover="changeImg(this)" ,
-                        src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/a6549acb-b075-4c3e-8ed3-9c9fcba32d42_600x.png?v=1625046216"
-                        alt="">
-                </div>
-                <div>
-                    <img onmouseover="changeImg(this)" ,
-                        src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/1bca7fb9-5f5c-42e3-930a-8a430d8a9e60_600x.png?v=1625046217"
-                        alt="">
-                </div>
-                <div>
-                    <img onmouseover="changeImg(this)" ,
-                        src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/8f01d1e9-48f4-4e55-886d-0b255b9bbf24_600x.png?v=1625045855"
-                        alt="">
-                </div>
-                <div>
-                    <img onmouseover="changeImg(this)" ,
-                        src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/a09a67f0-75bd-42b8-8f0d-58ffad51e03b_600x.png?v=1625045372"
-                        alt="">
-                </div>
-                <div>
-                    <img onmouseover="changeImg(this)" ,
-                        src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/485ea9aa-b170-4efc-ac40-ab8b0854083c_600x.png?v=1625044988"
-                        alt="">
-                </div>
-            </div>
-
-            <div id="bigImage">
-                <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/1bca7fb9-5f5c-42e3-930a-8a430d8a9e60_600x.png?v=1625046217"
-                    alt="">
-            </div>
-
-            <div id="productTitle">
-                <div id="title">
-                    <h1></h1>
-                    <p>SMART WATCHES</p>
-                </div>
-
-                <div id="rating">
-                    <span style="font-size:100%;color:red;">&starf;</span>
-                    <span style="font-size:100%;color:red;">&starf;</span>
-                    <span style="font-size:100%;color:red;">&starf;</span>
-                    <span style="font-size:100%;color:red;">&starf;</span>
-                    <span style="font-size:100%;color:red;">&starf;</span>
-                    <p> 4.8 <b>|</b> 0 reviews</p>
-                    <div>
-                        <img src="https://i.postimg.cc/9MLnSjP1/green-tick.jpg" alt="">
-                    </div>
-
-                </div>
-                <hr>
-                <div id="image_select">
-                    <div>
-                        <p>Color : <span id="product_colour">Green</span> </p>
-
-                    </div>
-
-                    <div id="dropdown">
-                        <select id="images">
-                            <option value="Green"></option>
-                            <option value="Red"></option>
-                            <option value="CoolGrey"></option>
-                            <option value="Midnightblue"></option>
-                            <option value="Black"></option>
-                            <option value="Cherry"></option>
-
-                        </select>
-                    </div>
-                </div>
-                <hr>
-                <div id="zest">
-                    <div>
-                        <p>Or 3 interest-free payments of <span class="greentext">₹ 833</span> with</p>
-                        <img src="https://assets.zestmoney.in/assets/widget/zest-logo-name-info.svg" alt="">
-                    </div>
-
-                </div>
-            </div>
-            <div id="productadd">
-                <div id="priceBox">
-                    <div id="price">
-                        <h1></h1>
-                        <h2> <strike></strike></h2>
-                    </div>
-                    <p><span class="greentext">You Save: ₹ 3491 (58%)</span> Inclusive of all taxes</p>
-                    <div id="stock">
-                        <p><span class="greentext"><b>In Stock</b> </span></p>
-                        <p><span class="redtext">Currently in 198 carts</span></p>
-                    </div>
-                    <div id="inccart">
-                        <div id="increase">
-                            <button>-</button>
-                            <span id="onPageQuantity" class="redtext">1</span>
-                            <button>+</button>
-                        </div>
-                        <p>Quantity</p>
-                    </div>
-                    <button id="addtocart">ADD TO CART</button>
-                </div>
-            </div>
+        <div id="products">
+            <!-- append products here -->
         </div>
     </div>
-
-    <!-- service div -->
-    <div id="service">
-        <div>
-            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/icon-1b.png?v=1654855622" alt="">
-            <p>1 Year Warranty</p>
-        </div>
-        <div>
-            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/icon-3b.png?v=1654855622" alt="">
-            <p>7 Days Replacement</p>
-        </div>
-        <div>
-            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/icon-2b.png?v=1654855622" alt="">
-            <p>Free Shipping</p>
-        </div>
-        <div>
-            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/icon-4b.png?v=1654855622" alt="">
-            <p>Secure Checkout</p>
-        </div>
     </div>
-
-    <!-- text link navigation like description specification  & reviews -->
-    <div id="textLink">
-        <div>
-            <h3><u> <a href="#description" style="color: red ;">DESCRIPTION</a> </u></h3>
-            <h3><a href="#specification" style="color: white;">SPECIFICATIONS</a> </h3>
-            <h3><a href="#review" style="color: white;">REVIEWS (912)</a> </h3>
-        </div>
-    </div>
-
-    <!-- experience the magic div -->
-    <div id="magic">
-        <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Storm_W.png?v=1620796906&quot" alt="">
-    </div>
-
-    <!-- boAt Storm Text -->
-    <div id="stormText">
-        <h1>boAt Storm</h1>
-        <p>The boAt Watch Storm is the perfect companion for your fitness transformation.
-            Your Watch Storm is here to remove all obstructions that you may face in your fitness journey.
-            With its daily activity tracker and 9 different sports modes, it will now be fun to track your journey
-            towards health.
-            Stay alert at all times with smart notifications from your phone with vibration alerts for calls, texts,
-            schedule reminders, alarms, & more!
-            The “wellness mode” of the smartwatch monitors your sleep, heart rate, blood oxygen levels as well as guides
-            you into a meditative state when you need to relax.
-            It also comes with a menstruation cycle tracker that predicts your cycle and health.
-            Its “find my phone” feature will call your phone to easily locate it.
-            The 5 ATM water resistance will keep the watch safe from splashes & sweat too!
-        </p>
-    </div>
-
-    <!-- Full-Touch 2.5D div -->
-    <div id="curved">
-        <div>
-            <img
-                src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/1_deda01ef-b4ca-46f6-88ca-076d36f989ea.png?v=1623739563">
-            <div>
-                <h1>Full-Touch 2.5D Curved Display</h1>
-                <p>Responsive touch that effortlessly lets you take the control.
-                    Full-Touch colour display which features complete capacitive touch experience.
-                </p>
-            </div>
-        </div>
-        <div>
-            <div>
-                <div>
-                    <h1>Precise health and fitness monitoring</h1>
-                </div>
-
-                <p>Monitor sleep along with monitoring 24 hour uninterrupted heart rate, Blood oxygen level, and Blood
-                    Pressure.
-                    This watch is made specially for those who perform
-                    high-intensity workouts and require precise health and fitness monitoring.
-                </p>
-            </div>
-            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/2_a25aff7a-b5c4-4565-a111-6e1ce2d5b5f0.png?v=1624268771"
-                alt="">
-        </div>
-    </div>
-
-    <!-- Keep Track Of Your SpO2 Level div -->
-    <div id="level">
-        <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/watch_flash.png?v=1620796756" alt="">
-
-        <div>
-            <h1>Keep Track Of Your SpO2 Level</h1>
-            <p>With the built in SpO2 sensor now you can track your blood oxygen level on the go with just one click.
-            </p>
-        </div>
-    </div>
-
-    <!-- specification -->
-    <div id="specification">
-        <div>
-            <table>
-                <tbody>
-                    <tr>
-                        <td class="greytext">Bluetooth Version</td>
-                        <td class="whitetext">4.2</td>
-                    </tr>
-                    <tr>
-                        <td class="greytext">Operating Temperature</td>
-                        <td class="whitetext">"-20°C" - "45°C"</td>
-                    </tr>
-                    <tr>
-                        <td class="greytext">Bluetooth Range</td>
-                        <td class="whitetext">10M</td>
-                    </tr>
-                    <tr>
-                        <td class="greytext">Battery Capacity</td>
-                        <td class="whitetext">210mAh</td>
-                    </tr>
-                    <tr>
-                        <td class="greytext">Working Time</td>
-                        <td class="whitetext">Up to 8-10 Days</td>
-                    </tr>
-                    <tr>
-                        <td class="greytext">Charging Time</td>
-                        <td class="whitetext">2.5 Hours</td>
-                    </tr>
-                    <tr>
-                        <td class="greytext">Charging Type</td>
-                        <td class="whitetext">USB Direct Charge</td>
-                    </tr>
-                    <tr>
-                        <td class="greytext">Standby Time</td>
-                        <td class="whitetext">20-30 Days</td>
-                    </tr>
-                    <tr>
-                        <td class="greytext">Activity Tracking</td>
-                        <td class="whitetext">9 Activites</td>
-                    </tr>
-                    <tr>
-                        <td class="greytext">Call Alert</td>
-                        <td class="whitetext">Yes</td>
-                    </tr>
-                    <tr>
-                        <td class="greytext">Music Control</td>
-                        <td class="whitetext">Yes</td>
-                    </tr>
-                    <tr>
-                        <td class="greytext">Guided Meditative Breathing</td>
-                        <td class="whitetext">Yes</td>
-                    </tr>
-                    <tr>
-                        <td class="greytext">Country Of Origin</td>
-                        <td class="whitetext"><b>China</b></td>
-                    </tr>
-                    <tr>
-                        <td class="greytext">Waterproof</td>
-                        <td class="whitetext">5 ATM</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/160380011832003449716834celeb.png?v=1615279706"
-            alt="">
-    </div>
-
-    <!-- Warranty -->
-    <div id="warranty">
-        <div>
-            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/4_6054d848-f822-4b3e-a5c9-4dbe62de64c5.png?v=1622612478"
-                alt="">
-            <div>
-                <h1>Daily Activity Tracker</h1>
-                <p>Smart activity tracker for calories, steps & distance.
-                    Storm comes with 9 Active Sports Modes: Running, Walking,
-                    Cycling, Hiking, Climbing, Fitness, Treadmill, Yoga, Dynamic Cycling to keep you on track.
-                </p>
-            </div>
-        </div>
-        <div>
-            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Voice-Assistant-Panel_1-Year_3e5ba7e2-2538-4f60-972a-7a9fd0c7f382.png?v=1617609236"
-                alt="">
-        </div>
-    </div>
-
-    <!-- FAQ -->
-    <div id="faq">
-        <div>
-            <h1>FAQs</h1>
-            <div>
-                <h4>Q. Does it come with different watch faces?</h4>
-                <select class="question">
-                    <option value=""></option>
-                    <option value="">Yes, Watch Storm comes with support for different watch faces.</option>
-                </select>
-            </div>
-            <hr>
-            <div>
-                <h4>Q. How much time does it take to charge?</h4>
-                <select class="question">
-                    <option value=""></option>
-                    <option value="">Watch Storm takes 2.5 hours to fully charge.</option>
-                </select>
-            </div>
-            <hr>
-            <div>
-                <h4>Q. What Bluetooth version does it support?</h4>
-                <select class="question">
-                    <option value=""></option>
-                    <option value="">Watch Storm comes with support for Bluetooth version 4.2.</option>
-                </select>
-            </div>
-            <hr>
-            <div>
-                <h4>Q. Does it have water resistance?Is it good for long-term outdoor use?</h4>
-                <select class="question">
-                    <option value=""></option>
-                    <option value="">Watch Storm comes with support for 5ATM water resistance making it perfect for
-                        outdoor use.</option>
-                </select>
-            </div>
-            <hr>
-            <div>
-                <h4>Q. Does it support notifications for particular apps?</h4>
-                <select class="question">
-                    <option value=""></option>
-                    <option value="">Yes, Watch Storm comes with support for notification alerts for multiple
-                        applications.</option>
-                </select>
-            </div>
-            <hr>
-            <div>
-                <h4>Q. Is there a warranty for the product? How do I claim warranty?</h4>
-                <select class="question">
-                    <option value=""></option>
-                    <li>
-                        <ul>Yes, all of our Smart Watches come with a 1 year warranty. To register your device, visit
-                            https://support.boat-lifestyle.com/.</ul>
-                    </li>
-                </select>
-            </div>
-            <hr>
-        </div>
-    </div>
-
-    <!-- download manual -->
-    <div id="download">
-        <div>
-            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Manual_Icon_5cdbc266-ef10-45e2-8884-b5331ffd4cce.png?v=1617182183"
-                alt="">
-            <h3><u>Download Manual</u> </h3>
-        </div>
-    </div>
-
-    <!-- review -->
-    <div id="review">
-        <div>
-            <h1>what boAtheads are saying:</h1>
-            <p><span style="font-size:100%;color:red;">&starf;</span> No reviews yet</p>
-        </div>
-        <div>
-            <p>Write a review</p>
-        </div>
-    </div>
-
-    <!-- Product Sticky -->
-    <div id="stickyProduct">
-        <div>
-            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/a6549acb-b075-4c3e-8ed3-9c9fcba32d42_600x.png?v=1625046216"
-                alt="">
-            <p>boAt Storm</p>
-            <p>Rs. 2,499.00</p>
-        </div>
-        <div>
-            <div>
-                <h4>Red</h4>
-
-            </div>
-            <button>ADD TO CART</button>
-        </div>
-    </div>
-
     <!-- Footer section  -->
     <!-- middleText starts -->
     <div id="middleText">
@@ -856,12 +455,8 @@
         <p>© 2022 Imagine Marketing Limited. All Rights Reserved.</p>
     </footer>
 
-
 </body>
 
 </html>
-
-<script src="productDetail.js"></script>
-<script src="paymentPage.js"></script>
-<script src="navbar.js"></script>
-<script src="https://kit.fontawesome.com/8697db6a09.js" crossorigin="anonymous"></script>
+<script src="productpagenavbar.js"></script>
+<script src="products.js"></script>

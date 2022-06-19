@@ -86,7 +86,7 @@
 } */
 #cart>div:first-child{
     width: 100%;
-    height: 320px;
+    height: 342px;
     flex-direction: column;
     overflow-y: auto;
     overflow-x: hidden;

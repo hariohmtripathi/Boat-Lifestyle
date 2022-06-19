@@ -13,6 +13,7 @@ function payDisplay(){
     let mobileNumber= document.getElementById("input");
     let payAddress= document.getElementById("input2");
     let payPay= document.getElementById("input3");
+    let verify= document.getElementById("verifyOtp");
     if(countu==1){
         continueButton.innerHTML=""
         mobileNumber.style.position="absolute";
@@ -23,7 +24,7 @@ function payDisplay(){
         payPay.style.visibility="visible";
        
     } else if(countu==2){
-    let verify= document.getElementById("verifyOtp");
+   
     mobileNumber.style.position="absolute";
     mobileNumber.style.visibility="hidden";   
     verify.style.position="relative";
@@ -31,7 +32,9 @@ function payDisplay(){
     let mobileNumberPay= document.getElementById("mblNumber").value;
     let mobileNumberVerify= document.getElementById("verifymblNumber");
     mobileNumberVerify.innerText= "+91 " + mobileNumberPay;
-    };
+    } else if(countu==3){
+        window.location.href="paymentDone.html";
+    }
     
 
 };
@@ -92,9 +95,9 @@ function displayPay(arr){
 let subtotale = document.querySelector("#subtotal");
 subtotale.innerText = "Rs. " + sumu;
 
-// let saveNamePayment= JSON.parse(localStorage.getItem("loggedin"));
-// let paymentName= document.getElementById("payName");
-// paymentName.innerText= saveNamePayment[0];
+let saveNamePayment= JSON.parse(localStorage.getItem("loggedin"));
+let paymentName= document.getElementById("payName");
+paymentName.innerText= saveNamePayment[0];
 
 let paymentProductPrice1= document.getElementById("paymentpayupi1");
 let paymentProductPrice2= document.getElementById("paymentpayupi2");

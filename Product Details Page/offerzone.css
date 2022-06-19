@@ -1,0 +1,204 @@
+      * {
+          margin: 0px;
+          padding: 0px;
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          box-sizing: border-box;
+      }
+
+      body {
+          background-color: #252525;
+      }
+      
+
+      #offerzoneimg {
+          margin: -4px;
+      }
+
+      #offerzoneimg>img {
+          width: 100%;
+          margin: 0px;
+      }
+
+      #cashback {
+          padding: 40px;
+          background-color: #f2f0f1;
+          display: flex;
+          justify-content: start;
+          gap: 20px;
+      }
+
+      #cashback>div {
+
+          border-radius: 10px;
+          padding: 20px;
+          width: 25%;
+          height: 290px;
+          background-color: white;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+      }
+
+      #cashback>div>img {
+          width: 100%;
+          margin: 0px;
+      }
+
+      #cashback>div>button {
+
+          float: right;
+          padding: 10px;
+          border: 0.5px solid black;
+          background-color: white;
+          border-radius: 5px;
+          font-size: small;
+      }
+
+      #cashback>div>div>p:nth-child(4) {
+          color: gray;
+      }
+
+      #container>h1 {
+          color: white;
+      }
+
+      #cat_image>img {
+          width: 100%;
+      }
+
+      #container {
+          width: 85%;
+          margin: auto;
+          margin-bottom: 50px;
+
+      }
+
+      #products {
+          margin: auto;
+          display: grid;
+          justify-content: center;
+          align-items: center;
+          gap: 20px;
+          border: 1px splid blue;
+          grid-template-columns: repeat(4, 1fr);
+      }
+
+      #products>div {
+
+          display: flex;
+          border-radius: 10px;
+          background-color: #e3e3e3;
+          flex-direction: column;
+          justify-content: center;
+
+      }
+
+      #products>div>img {
+          width: 80%;
+          /* overflow: hidden; */
+          margin: auto;
+          text-align: center;
+
+      }
+
+      #products>div>p {
+          position: relative;
+          width: 35%;
+          opacity: 1;
+          border-top-right-radius: 5px;
+          border-bottom-right-radius: 5px;
+          font-weight: 500;
+          text-transform: uppercase;
+          font-size: 14px;
+          padding: 3px;
+          display: inline-block;
+          top: 15px;
+      }
+
+      #products>div>div>div>span {
+          margin-left: 0px;
+          margin-right: 5px;
+          font-size: 16px;
+      }
+
+      #products>div>div>div>span:first-child {
+          font-size: 15px;
+      }
+
+      #products>div>div {
+          padding: 10px;
+          margin: 8px;
+          border-radius: 10px;
+          background-color: white;
+      }
+
+      #products>div>div>h3 {
+          line-height: 15px;
+          margin-bottom: 5px;
+          margin-left: 5px;
+
+      }
+
+      #products>div>div>p {
+          margin-bottom: 5px;
+          font-size: 15px;
+          margin-left: 5px;
+      }
+
+      #products>div>div>hr {
+          line-height: 10px;
+          background-color: #e3e3e3;
+          height: 0.5px;
+      }
+
+      #products>div>div>button {
+          width: 100%;
+
+          background-color: red;
+          color: white;
+          text-transform: uppercase;
+          font-size: 15px;
+          border: none;
+          padding: 8px;
+          font-weight: bold;
+          border-radius: 5px;
+          cursor: pointer;
+      }
+
+      #products>div>div>div {
+          display: flex;
+          padding: 5px;
+          font-size: 15px;
+          justify-content: start;
+          align-items: center;
+      }
+
+      #products>div>div>div>p {
+
+          margin-right: 5px;
+      }
+
+      #filterAndSort {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          margin: 20px;
+      }
+
+      #filterAndSort>select {
+          background-color: transparent;
+          color: white;
+          padding: 10px;
+          font-size: medium;
+          font-weight: bold;
+          border: none;
+      }
+
+      #filterAndSort>select>option {
+          background-color: #252525;
+          color: white;
+
+      }
+
+      #products p {
+          line-height: 15px;
+      }
